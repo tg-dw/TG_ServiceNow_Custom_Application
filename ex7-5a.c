@@ -4,6 +4,7 @@
 #include <wait.h>
 #define  NUMCHILD 20 // 자식 프로세스 개수 = 20
 //test
+//test2
 main(argc, argv)
 int argc;
 char *argv[];
