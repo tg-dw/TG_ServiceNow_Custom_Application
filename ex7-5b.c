@@ -6,7 +6,7 @@ char *argv[];
 {
 	int     rand();
 	void    srand();
-//test test
+//test testㄲㄲㄲㄲ
 	srand((unsigned)getpid()); // 처음 난수를 발생할 프로세스를 지정
 
 	sleep((rand() * 197 % 100) + 1); // 난수를 발생시켜 그 시간 만큼 대기
