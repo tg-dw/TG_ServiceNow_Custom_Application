@@ -41,7 +41,7 @@
         <update_guid_history>b3cc219af4a691101ca6c458df0ff36e:1253104323</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Office Automation.OA 신청서">e3ece19a87a691104bba40c6cebb35de</sys_audit_delete>
+        <sys_audit_delete display_value="">e3ece19a87a691104bba40c6cebb35de</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-17 06:13:27</sys_created_on>

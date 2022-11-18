@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="">d3c506e887fedd104bba40c6cebb3538</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-18 08:48:56</sys_created_on>
+        <sys_id>c563c324db9f511024c443ea1396196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OA 신청서.SNC External</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_c563c324db9f511024c443ea1396196b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-18 08:48:56</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_c563c324db9f511024c443ea1396196b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="">d3c506e887fedd104bba40c6cebb3538</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-11-18 08:48:56</sys_created_on><sys_id>c563c324db9f511024c443ea1396196b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OA 신청서.SNC External</sys_name><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_c563c324db9f511024c443ea1396196b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-11-18 08:48:56</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-360825943</payload_hash>
+        <record_name>OA 신청서.SNC External</record_name>
+        <reverted_from/>
+        <source>40b15f30db03111024c443ea13961939</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-11-06 18:14:10</sys_created_on>
+        <sys_id>1a838364db9f511024c443ea1396190f</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1844e2665500000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>d6838364629f5110954a628a2cb55a0f</update_guid>
+        <update_guid_history>d6838364629f5110954a628a2cb55a0f:-360825943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="OA 신청서.SNC External">9e838364db9f511024c443ea1396192a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-18 08:49:34</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>029df797fa3e4588826083b6f80ff104</sys_id>
+        <sys_metadata>c563c324db9f511024c443ea1396196b</sys_metadata>
+        <sys_name>OA 신청서.SNC External</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete/>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_c563c324db9f511024c443ea1396196b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_c563c324db9f511024c443ea1396196b">1a838364db9f511024c443ea1396190f</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

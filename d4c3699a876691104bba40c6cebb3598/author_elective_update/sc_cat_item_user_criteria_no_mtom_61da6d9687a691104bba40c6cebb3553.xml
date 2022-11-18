@@ -32,16 +32,16 @@
         <sys_created_by/>
         <sys_created_on>2022-09-29 03:06:42</sys_created_on>
         <sys_id>d9654aa887fedd104bba40c6cebb354d</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>1838735edd00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-18 08:57:57</sys_updated_on>
         <type>Catalog Item Not Available for</type>
         <update_guid>99654aa852fedd106b61d00acd0ecc4d</update_guid>
         <update_guid_history>99654aa852fedd106b61d00acd0ecc4d:1413036935</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OA 신청서.SNC External">15654aa887fedd104bba40c6cebb3550</sys_audit_delete>
+        <sys_audit_delete display_value="">15654aa887fedd104bba40c6cebb3550</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-24 07:46:40</sys_created_on>

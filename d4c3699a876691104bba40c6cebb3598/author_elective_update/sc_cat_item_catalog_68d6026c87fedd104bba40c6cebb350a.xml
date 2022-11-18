@@ -41,7 +41,7 @@
         <update_guid_history>28d6026c95fedd10ee6dee7b52f3d20d:1264147650</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Service Catalog.OA 신청서">a0f6c26c87fedd104bba40c6cebb35e9</sys_audit_delete>
+        <sys_audit_delete display_value="">a0f6c26c87fedd104bba40c6cebb35e9</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-24 07:53:26</sys_created_on>

@@ -13,7 +13,7 @@
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
         <sys_update_name>sys_scope_privilege_c459996487fadd104bba40c6cebb35ae</sys_update_name>
         <target_name>di_training_input</target_name>
-        <target_scope display_value="Document Intelligence">19b40605edae411005e8007f82757635</target_scope>
+        <target_scope display_value="">19b40605edae411005e8007f82757635</target_scope>
         <target_type>sys_db_object</target_type>
     </sys_scope_privilege>
 </record_update>

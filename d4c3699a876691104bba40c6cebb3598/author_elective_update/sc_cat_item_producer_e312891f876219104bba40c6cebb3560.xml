@@ -136,7 +136,7 @@
         <update_guid_history>bb12891f28621910558469e42265fa9e:-276133221</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OA Request">9e52015f876219104bba40c6cebb357d</sys_audit_delete>
+        <sys_audit_delete display_value="">9e52015f876219104bba40c6cebb357d</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-20 05:41:20</sys_created_on>

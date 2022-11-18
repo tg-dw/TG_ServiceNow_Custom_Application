@@ -32,16 +32,16 @@
         <sys_created_by/>
         <sys_created_on>2022-09-29 03:06:42</sys_created_on>
         <sys_id>de52015f876219104bba40c6cebb3556</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>1838735edd00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-18 08:57:58</sys_updated_on>
         <type>Catalog Item Not Available for</type>
         <update_guid>9e52015f8b62191050c5ab006960d256</update_guid>
         <update_guid_history>9e52015f8b62191050c5ab006960d256:1835563982</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OA Request.SNC External">5252015f876219104bba40c6cebb3559</sys_audit_delete>
+        <sys_audit_delete display_value="">5252015f876219104bba40c6cebb3559</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-20 05:41:19</sys_created_on>

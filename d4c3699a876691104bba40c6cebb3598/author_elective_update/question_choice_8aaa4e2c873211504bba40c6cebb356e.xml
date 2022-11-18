@@ -46,7 +46,7 @@
         <update_guid_history>5ab262b5593ed5508b49b7217f5f6e2a:-1372517679,c6aa4e2c253211503249344a7f796f70:-667768857</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="프린터">4c88a9b61bfe1510cc9efdd2cd4bcb1f</sys_audit_delete>
+        <sys_audit_delete display_value="">4c88a9b61bfe1510cc9efdd2cd4bcb1f</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-31 05:26:46</sys_created_on>

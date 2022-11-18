@@ -176,7 +176,7 @@
         <update_guid_history>70650aa82efedd106f0277555147cc9e:-1516888999,7c8db5566a2a91100d85a00d7078d712:-905681899,8bcced5ab1a69110576ca78614fb1962:-693351455,a41c6d1a67a691107428a0cdac4e9ce0:535136428,677b211ac2a691107f4fca6bc438c761:585723013,c44b69d63ca69110cbb326b2930e8bbb:2101386590,9d2b65d621a69110bb9c487beeb053a8:-403411053,320be1d63ea691103ff7cfd2e7b3e82b:-1966332002,e5da6d9653a69110ef1d116b03251458:2069627489</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OA 신청서">1d654aa887fedd104bba40c6cebb3565</sys_audit_delete>
+        <sys_audit_delete display_value="">1d654aa887fedd104bba40c6cebb3565</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-24 07:46:40</sys_created_on>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Office Automation</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Office Automation</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">70b265d61b300110d00384c6cc4bcb82</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-18 08:56:44</sys_created_on>
+        <sys_id>2b254fe4db9f511024c443ea139619cc</sys_id>
+        <sys_name>Office Automation</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_wizard_answer_2b254fe4db9f511024c443ea139619cc</sys_update_name>
+        <table/>
+        <target_url>x_tigar_office_a_0_office_automation.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

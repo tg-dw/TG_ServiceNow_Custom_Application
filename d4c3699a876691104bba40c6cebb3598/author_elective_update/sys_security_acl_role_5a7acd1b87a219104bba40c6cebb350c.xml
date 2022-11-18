@@ -42,7 +42,7 @@
         <update_guid_history>627acd1b35a219107b0d059aaea0fc10:-1444142861</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OA_Lookup_User_Info.x_tigar_office_a_0.oa_admin">61be4fb487fe51504bba40c6cebb3563</sys_audit_delete>
+        <sys_audit_delete display_value="">61be4fb487fe51504bba40c6cebb3563</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-25 07:45:29</sys_created_on>

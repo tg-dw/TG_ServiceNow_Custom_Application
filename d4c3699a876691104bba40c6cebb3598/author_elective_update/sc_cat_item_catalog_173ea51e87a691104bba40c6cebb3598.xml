@@ -41,7 +41,7 @@
         <update_guid_history>573ea51ef7a69110147d0e786ea8279a:1308636576</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Service Catalog.OA 신청서">90cee15e87a691104bba40c6cebb3575</sys_audit_delete>
+        <sys_audit_delete display_value="">90cee15e87a691104bba40c6cebb3575</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-17 06:21:25</sys_created_on>
@@ -50,7 +50,7 @@
         <sys_metadata>173ea51e87a691104bba40c6cebb3598</sys_metadata>
         <sys_name>Service Catalog.OA 신청서</sys_name>
         <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
-        <sys_parent display_value="OA 신청서">9dda6d9687a691104bba40c6cebb3551</sys_parent>
+        <sys_parent display_value="">9dda6d9687a691104bba40c6cebb3551</sys_parent>
         <sys_policy/>
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
         <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>

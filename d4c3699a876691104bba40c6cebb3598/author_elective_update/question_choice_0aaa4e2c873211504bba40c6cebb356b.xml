@@ -46,7 +46,7 @@
         <update_guid_history>d5b262b54f3ed5502b752d5807d86d77:-1615993242,46aa4e2ce1321150bc9b5bfb8d85796d:1305441456</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="모니터">337869b61bfe1510cc9efdd2cd4bcbf1</sys_audit_delete>
+        <sys_audit_delete display_value="">337869b61bfe1510cc9efdd2cd4bcbf1</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-31 05:26:45</sys_created_on>

@@ -46,7 +46,7 @@
         <update_guid_history>4725e2b9de3ed550c4cfc0b77ed8431a:678264532,4aaa4e2c803211501496fa99a98e6773:-912591710</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="전화기">0c8869b61bfe1510cc9efdd2cd4bcbfc</sys_audit_delete>
+        <sys_audit_delete display_value="">0c8869b61bfe1510cc9efdd2cd4bcbfc</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-31 05:26:46</sys_created_on>

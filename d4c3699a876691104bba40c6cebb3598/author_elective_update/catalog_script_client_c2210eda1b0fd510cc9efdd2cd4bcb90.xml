@@ -143,7 +143,7 @@
         <update_guid_history>f4044ede8d0fd510f832428462c8c66d:-1201386039,c9f14e1eb80fd510e3709a0d850ec2b5:2085417033</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OA Price Variable ">3e248ede1b0fd510cc9efdd2cd4bcb4e</sys_audit_delete>
+        <sys_audit_delete display_value="">3e248ede1b0fd510cc9efdd2cd4bcb4e</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-11 04:26:22</sys_created_on>

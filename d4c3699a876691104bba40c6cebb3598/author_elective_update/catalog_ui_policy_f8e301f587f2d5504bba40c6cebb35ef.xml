@@ -83,7 +83,7 @@
         <update_guid_history>9fc0ca31417ad550c9a5b6b62a302832:1924342640,8c95297961b6d55025a4c0d0bc5facc3:-272243253,0b15e17957b6d550dc67118aa97060d2:1924342640,b184653903b6d550de4a06b70c5854c8:-272243253,8334edf52eb6d5509e4e3891cfb80e5e:745953131,567359bd1236d5502dacab4214511ceb:-272243253,072359bd5f36d55051dada991baf7c26:1087605272,59c2dd7d8236d5506d7d1c67bd785bd2:1670048023,c652dd3d4136d550ad4f08fdc31d2223:-1578673572,9c77413d5bf2d550433bb5b0bd11124b:-1897750930</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OA Max Rental Period">2b165a7187fad5504bba40c6cebb3597</sys_audit_delete>
+        <sys_audit_delete display_value="">2b165a7187fad5504bba40c6cebb3597</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-28 06:12:08</sys_created_on>

@@ -169,7 +169,7 @@
         <update_guid_history>e10cc624ca7211501aceec0aae8163bb:228851971,7c4b8620d472115024f7772d9e650fb4:770290196,eeda8e6c9a3211505a30c07b12a6230b:1718405053</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="도난/손실 신고 상세 정보">f94cca64877211504bba40c6cebb3553</sys_audit_delete>
+        <sys_audit_delete display_value="">f94cca64877211504bba40c6cebb3553</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-24 08:16:44</sys_created_on>
