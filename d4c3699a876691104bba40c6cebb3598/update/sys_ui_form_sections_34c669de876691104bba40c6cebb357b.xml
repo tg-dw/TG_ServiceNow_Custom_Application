@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="34c669de876691104bba40c6cebb357b" sys_domain="global" table="x_tigar_office_a_0_office_automation" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 05:46:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcc669de876691104bba40c6cebb357d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tigar_office_a_0_office_automation" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">34c669de876691104bba40c6cebb357b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">4f34a5da876691104bba40c6cebb35e5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-17 05:46:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 05:46:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8c669de876691104bba40c6cebb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tigar_office_a_0_office_automation" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">34c669de876691104bba40c6cebb357b</sys_ui_form>
+            <sys_ui_section caption="신청자" display_value="신청자" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">f0c669de876691104bba40c6cebb3579</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-17 05:46:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 05:46:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>45c669de876691104bba40c6cebb3582</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tigar_office_a_0_office_automation" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">34c669de876691104bba40c6cebb357b</sys_ui_form>
+            <sys_ui_section caption="승인자" display_value="승인자" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">b0c669de876691104bba40c6cebb357a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-17 05:46:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 07:09:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>59d9399e87e691104bba40c6cebb3558</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tigar_office_a_0_office_automation" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">34c669de876691104bba40c6cebb357b</sys_ui_form>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-17 07:09:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>233cf22a87a615104bba40c6cebb3596</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tigar_office_a_0_office_automation" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">34c669de876691104bba40c6cebb357b</sys_ui_form>
+            <sys_ui_section caption="도난/손실 신고서 관련" display_value="도난/손실 신고서 관련" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">eb3cf22a87a615104bba40c6cebb3574</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-31 04:56:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-24 04:14:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>45d459ac87badd104bba40c6cebb3589</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tigar_office_a_0_office_automation" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">34c669de876691104bba40c6cebb357b</sys_ui_form>
+            <sys_ui_section caption="Document Intelligence TEST" display_value="Document Intelligence TEST" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">f8d459ac87badd104bba40c6cebb3584</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-31 04:56:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-26 05:39:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d9b330587fad1504bba40c6cebb3516</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tigar_office_a_0_office_automation" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">34c669de876691104bba40c6cebb357b</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">bc9bffc187fad1504bba40c6cebb35a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-31 04:56:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_tigar_office_a_0_office_automation</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 05:46:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>34c669de876691104bba40c6cebb357b</sys_id>
+            <sys_name>x_tigar_office_a_0_office_automation</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_ui_form_sections_34c669de876691104bba40c6cebb357b</sys_update_name>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

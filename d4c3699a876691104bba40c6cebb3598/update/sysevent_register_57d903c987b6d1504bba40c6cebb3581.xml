@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>OA 레코드 Work In Progress 상태로 업데이트 시 메일링을 위해 이벤트 발생</description>
+        <event_name>x_tigar_office_a_0.oa_when_record_in_pro</event_name>
+        <fired_by>Business Rules: OA State Change Rule</fired_by>
+        <queue/>
+        <suffix>oa_when_record_in_progress</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-26 02:05:19</sys_created_on>
+        <sys_id>57d903c987b6d1504bba40c6cebb3581</sys_id>
+        <sys_name>x_tigar_office_a_0.oa_when_record_in_pro</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sysevent_register_57d903c987b6d1504bba40c6cebb3581</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation</table>
+    </sysevent_register>
+</record_update>

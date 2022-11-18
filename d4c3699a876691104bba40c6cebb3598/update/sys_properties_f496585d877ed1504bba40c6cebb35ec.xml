@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>OA 신청서 레코드는 완료, 승인 거절 상태에서 설정값(일) 이후 Closed 상태로 업데이트 됨</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_tigar_office_a_0.complete_to_closed_period_property</name>
+        <read_roles>x_tigar_office_a_0.oa_approver,x_tigar_office_a_0.oa_user,x_tigar_office_a_0.oa_admin</read_roles>
+        <suffix>complete_to_closed_period_property</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-26 07:43:43</sys_created_on>
+        <sys_id>f496585d877ed1504bba40c6cebb35ec</sys_id>
+        <sys_name>x_tigar_office_a_0.complete_to_closed_period_property</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_properties_f496585d877ed1504bba40c6cebb35ec</sys_update_name>
+        <type>string</type>
+        <value>3</value>
+        <write_roles>x_tigar_office_a_0.oa_admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=f496585d877ed1504bba40c6cebb35ec"/>
+</record_update>

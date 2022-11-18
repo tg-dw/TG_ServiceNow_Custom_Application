@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>description</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-17 07:43:52</sys_created_on>
+        <sys_id>8ca10ada872a91104bba40c6cebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>description</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_ui_policy_action_8ca10ada872a91104bba40c6cebb35df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-17 07:43:52</sys_updated_on>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <ui_policy display_value="OA Make Return Request Type Form">4ca10ada872a91104bba40c6cebb35d5</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>ef2edf6fdb99ec1852cec59705961992</instance_id>
+        <instance_name>timegatecorpdemo2</instance_name>
+        <name>sys_ui_policy_action_8ca10ada872a91104bba40c6cebb35df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>description</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-10-17 07:43:52</sys_created_on><sys_id>8ca10ada872a91104bba40c6cebb35df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>description</sys_name><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sys_ui_policy_action_8ca10ada872a91104bba40c6cebb35df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-10-17 07:43:52</sys_updated_on><table>x_tigar_office_a_0_office_automation</table><ui_policy display_value="OA Make Return Request Type Form">4ca10ada872a91104bba40c6cebb35d5</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1286400332</payload_hash>
+        <record_name>description</record_name>
+        <reverted_from/>
+        <source>58c3699a876691104bba40c6cebb359a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-17 07:43:53</sys_created_on>
+        <sys_id>80a10ada872a91104bba40c6cebb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183e4e62ab20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-17 07:43:53</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>88a10ada8b2a911009480bff475355e1</update_guid>
+        <update_guid_history>88a10ada8b2a911009480bff475355e1:-1286400332</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 01:36:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>53e1d88c850e4d59b69c7a4c0f6fdb61</sys_id>
+        <sys_metadata>8ca10ada872a91104bba40c6cebb35df</sys_metadata>
+        <sys_name>description</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_8ca10ada872a91104bba40c6cebb35df</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_8ca10ada872a91104bba40c6cebb35df">80a10ada872a91104bba40c6cebb35e2</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

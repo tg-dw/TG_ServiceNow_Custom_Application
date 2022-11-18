@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_tigar_office_a_0.Global_DateTime_Utils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Global_DateTime_Utils</name>
+        <script><![CDATA[var Global_DateTime_Utils = Class.create();
+Global_DateTime_Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	addDaysDateTime:function(){
+		var returnValue=""; // 소속/사번/전화번호
+		var startDT = this.getParameter('startDateTime');
+		var addDays = this.getParameter('days');
+		gs.info('Global_DateTime_Utils - addDaysDateTime 사용');
+		///어어어엉
+		var gdt = new GlideDateTime(startDT);
+		gdt.addDaysLocalTime(addDays); //3년 추가
+		returnValue = gdt.getDate();
+		
+		return returnValue;
+	},
+    type: 'Global_DateTime_Utils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 02:10:40</sys_created_on>
+        <sys_id>5aecdd3d8776d5504bba40c6cebb358a</sys_id>
+        <sys_name>Global_DateTime_Utils</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_include_5aecdd3d8776d5504bba40c6cebb358a</sys_update_name>
+    </sys_script_include>
+</record_update>

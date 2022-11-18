@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>10cc2a6253730110f9a4ddeeff7b12a3</copied_from>
+        <copied_from_name>Extract Values Flow Template</copied_from_name>
+        <description/>
+        <internal_name>docintel_extract_values_flow__lhh_oa_invoice_test__lhh_oa_extraction</internal_name>
+        <label_cache>[{"name":"Updated_1.current.source_record","label":"Trigger - Record Updated➛Task Record➛Source Record","reference":"","reference_display":"Source Record","type":"document_id","base_type":"document_id","parent_table_name":"di_task","column_name":"source_record"},{"name":"9a4849a5-73e5-45ab-bb78-96502f34c45f.__dont_treat_as_error__","label":"2 - Set Extracted Values➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"42347f9b-ea6c-44a2-b2e4-339d9c1136ee"}},{"name":"9a4849a5-73e5-45ab-bb78-96502f34c45f.__action_status__","label":"2 - Set Extracted Values➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD1ebeeae2ed730110cc770743d7e2ee88","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"010edba3-2792-41bf-a98d-d2a2b66ddcac"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Task Record","reference":"di_task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{}},{"name":"5ca0a909-dd80-4da6-9668-dee941a90517.__dont_treat_as_error__","label":"1 - Retrieve Extracted Values➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"406bc549-4c7c-4eab-a724-7578bc763bbe"}},{"name":"5ca0a909-dd80-4da6-9668-dee941a90517.__action_status__","label":"1 - Retrieve Extracted Values➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf25ce262fe730110b990161a387fb07a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"266b9207-949c-4473-b740-7b594af90f91"}},{"name":"5ca0a909-dd80-4da6-9668-dee941a90517.result","label":"1 - Retrieve Extracted Values➛Result","reference_display":"Result","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be0e0bed-a81b-4f9e-a350-b710e542508c"}}]</label_cache>
+        <master_snapshot>8e1e516c87fadd104bba40c6cebb350a</master_snapshot>
+        <name>DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>9e1e516c87fadd104bba40c6cebb35bc</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a7ed992c87fadd104bba40c6cebb3557</sys_id>
+        <sys_name>DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_hub_flow_a7ed992c87fadd104bba40c6cebb3557</sys_update_name>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="di_task">statusCHANGESTODone^source_table=x_tigar_office_a_0_office_automation<item display_value="Done" endquery="false" field="status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Done"/>
+            <item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="x_tigar_office_a_0_office_automation"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e1e516c87fadd104bba40c6cebb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:59</sys_updated_on>
+        <table>di_task</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>a7ed992c87fadd104bba40c6cebb3557</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:59</sys_created_on>
+        <sys_id>5a1e516c87fadd104bba40c6cebb35bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:59</sys_updated_on>
+        <trigger display_value="">9e1e516c87fadd104bba40c6cebb35bc</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a7ed992c87fadd104bba40c6cebb3557^sys_idNOT IN5a1e516c87fadd104bba40c6cebb35bd"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a7ed992c87fadd104bba40c6cebb3557^sys_idNOT IN33ed992c87fadd104bba40c6cebb3581"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">a7ed992c87fadd104bba40c6cebb3557</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>33ed992c87fadd104bba40c6cebb3581</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:59</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33ed992c87fadd104bba40c6cebb3581"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>33ed992c87fadd104bba40c6cebb3581</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>3fed992c87fadd104bba40c6cebb3582</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <value>di_task</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>33ed992c87fadd104bba40c6cebb3581</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>7bed992c87fadd104bba40c6cebb3582</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <value>background</value>
+        <variable display_value="Run flow In">4ecd76460f103300b599bca2ff767e0d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>33ed992c87fadd104bba40c6cebb3581</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>b7ed992c87fadd104bba40c6cebb3582</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:18</sys_updated_on>
+        <value>statusCHANGESTODone^source_table=x_tigar_office_a_0_office_automation</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>33ed992c87fadd104bba40c6cebb3581</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>bfed992c87fadd104bba40c6cebb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=33ed992c87fadd104bba40c6cebb3581"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a7ed992c87fadd104bba40c6cebb3557^sys_idNOT IN27ed992c87fadd104bba40c6cebb3558"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a7ed992c87fadd104bba40c6cebb3557</id>
+        <name>DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:15</sys_created_on>
+        <sys_id>27ed992c87fadd104bba40c6cebb3558</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:15</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=27ed992c87fadd104bba40c6cebb3558"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a7ed992c87fadd104bba40c6cebb3557^sys_idNOT IN77ed992c87fadd104bba40c6cebb3560,7fed992c87fadd104bba40c6cebb3564,ffed992c87fadd104bba40c6cebb3567"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">a7ed992c87fadd104bba40c6cebb3557</model>
+        <model_id>a7ed992c87fadd104bba40c6cebb3557</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:15</sys_created_on>
+        <sys_id>77ed992c87fadd104bba40c6cebb3560</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">a7ed992c87fadd104bba40c6cebb3557</model>
+        <model_id>a7ed992c87fadd104bba40c6cebb3557</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:15</sys_created_on>
+        <sys_id>7fed992c87fadd104bba40c6cebb3564</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">a7ed992c87fadd104bba40c6cebb3557</model>
+        <model_id>a7ed992c87fadd104bba40c6cebb3557</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>ffed992c87fadd104bba40c6cebb3567</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a7ed992c87fadd104bba40c6cebb3557^sys_idNOT IN33ed992c87fadd104bba40c6cebb357f,7fed992c87fadd104bba40c6cebb3573"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Set Extracted Values">56beeae253730110f9a4ddeeff7b124f</action_type>
+        <action_type_parent display_value="Set Extracted Values">088d22a253730110f9a4ddeeff7b12a1</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">a7ed992c87fadd104bba40c6cebb3557</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>33ed992c87fadd104bba40c6cebb357f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-10-24 05:02:39</sys_updated_on>
+        <ui_id>9a4849a5-73e5-45ab-bb78-96502f34c45f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33ed992c87fadd104bba40c6cebb357f"/>
+    <sys_element_mapping action="delete_multiple" query="id=33ed992c87fadd104bba40c6cebb357f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>extracted_values</field>
+        <id>33ed992c87fadd104bba40c6cebb357f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>77ed992c87fadd104bba40c6cebb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_56beeae253730110f9a4ddeeff7b124f</table>
+        <value>{{5ca0a909-dd80-4da6-9668-dee941a90517.result}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>33ed992c87fadd104bba40c6cebb357f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>fbed992c87fadd104bba40c6cebb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_56beeae253730110f9a4ddeeff7b124f</table>
+        <value>{{Updated_1.current.source_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task</field>
+        <id>33ed992c87fadd104bba40c6cebb357f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>3bed992c87fadd104bba40c6cebb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_56beeae253730110f9a4ddeeff7b124f</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33ed992c87fadd104bba40c6cebb357f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33ed992c87fadd104bba40c6cebb357f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Retrieve Extracted Values">be5ce26253730110f9a4ddeeff7b125b</action_type>
+        <action_type_parent display_value="Retrieve Extracted Values">49bbe22253730110f9a4ddeeff7b12d7</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">a7ed992c87fadd104bba40c6cebb3557</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>7fed992c87fadd104bba40c6cebb3573</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-10-24 05:02:39</sys_updated_on>
+        <ui_id>5ca0a909-dd80-4da6-9668-dee941a90517</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7fed992c87fadd104bba40c6cebb3573"/>
+    <sys_element_mapping action="delete_multiple" query="id=7fed992c87fadd104bba40c6cebb3573"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task</field>
+        <id>7fed992c87fadd104bba40c6cebb3573</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>7bed992c87fadd104bba40c6cebb3575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_be5ce26253730110f9a4ddeeff7b125b</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7fed992c87fadd104bba40c6cebb3573"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7fed992c87fadd104bba40c6cebb3573"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557^sys_idNOT IN33ed992c87fadd104bba40c6cebb3567,7bed992c87fadd104bba40c6cebb356a,bfed992c87fadd104bba40c6cebb3563"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>33ed992c87fadd104bba40c6cebb3567</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:16</sys_created_on>
+        <sys_id>7bed992c87fadd104bba40c6cebb356a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:15</sys_created_on>
+        <sys_id>bfed992c87fadd104bba40c6cebb3563</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a7ed992c87fadd104bba40c6cebb3557^sys_idNOT INde1e516c87fadd104bba40c6cebb35be"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"de1e516c87fadd104bba40c6cebb35be","name":"plan","plan_signature":null}}</plan>
+        <plan_id>a7ed992c87fadd104bba40c6cebb3557</plan_id>
+        <snapshot>2edf1120873edd104bba40c6cebb3518</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de1e516c87fadd104bba40c6cebb35be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:59</sys_updated_on>
+        <trigger display_value="">9e1e516c87fadd104bba40c6cebb35bc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a7ed992c87fadd104bba40c6cebb3557"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>docintel_extract_values_flow__lhh_oa_invoice_test__lhh_oa_extraction</internal_name>
+        <label_cache>[{"name":"Updated_1.current.source_record","label":"Trigger - Record Updated➛Task Record➛Source Record","reference":"","reference_display":"Source Record","type":"document_id","base_type":"document_id","parent_table_name":"di_task","column_name":"source_record"},{"name":"9a4849a5-73e5-45ab-bb78-96502f34c45f.__dont_treat_as_error__","label":"2 - Set Extracted Values➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"42347f9b-ea6c-44a2-b2e4-339d9c1136ee"}},{"name":"9a4849a5-73e5-45ab-bb78-96502f34c45f.__action_status__","label":"2 - Set Extracted Values➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD1ebeeae2ed730110cc770743d7e2ee88","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"010edba3-2792-41bf-a98d-d2a2b66ddcac"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Task Record","reference":"di_task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{}},{"name":"5ca0a909-dd80-4da6-9668-dee941a90517.__dont_treat_as_error__","label":"1 - Retrieve Extracted Values➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"406bc549-4c7c-4eab-a724-7578bc763bbe"}},{"name":"5ca0a909-dd80-4da6-9668-dee941a90517.__action_status__","label":"1 - Retrieve Extracted Values➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf25ce262fe730110b990161a387fb07a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"266b9207-949c-4473-b740-7b594af90f91"}},{"name":"5ca0a909-dd80-4da6-9668-dee941a90517.result","label":"1 - Retrieve Extracted Values➛Result","reference_display":"Result","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be0e0bed-a81b-4f9e-a350-b710e542508c"}}]</label_cache>
+        <master>true</master>
+        <name>DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">a7ed992c87fadd104bba40c6cebb3557</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e1e516c87fadd104bba40c6cebb350a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:57</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=8e1e516c87fadd104bba40c6cebb350a^sys_idNOT INd61e516c87fadd104bba40c6cebb355b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">8e1e516c87fadd104bba40c6cebb350a</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>d61e516c87fadd104bba40c6cebb355b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:59</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d61e516c87fadd104bba40c6cebb355b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d61e516c87fadd104bba40c6cebb355b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>161e516c87fadd104bba40c6cebb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <value>statusCHANGESTODone^source_table=x_tigar_office_a_0_office_automation</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d61e516c87fadd104bba40c6cebb355b</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>521e516c87fadd104bba40c6cebb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d61e516c87fadd104bba40c6cebb355b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>9a1e516c87fadd104bba40c6cebb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <value>di_task</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d61e516c87fadd104bba40c6cebb355b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>d61e516c87fadd104bba40c6cebb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <value>background</value>
+        <variable display_value="Run flow In">4ecd76460f103300b599bca2ff767e0d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=d61e516c87fadd104bba40c6cebb355b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8e1e516c87fadd104bba40c6cebb350a^sys_idNOT IN4e1e516c87fadd104bba40c6cebb350b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8e1e516c87fadd104bba40c6cebb350a</id>
+        <name>DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:57</sys_created_on>
+        <sys_id>4e1e516c87fadd104bba40c6cebb350b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4e1e516c87fadd104bba40c6cebb350b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8e1e516c87fadd104bba40c6cebb350a^sys_idNOT IN0e1e516c87fadd104bba40c6cebb3522,421e516c87fadd104bba40c6cebb352b,8e1e516c87fadd104bba40c6cebb350c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">8e1e516c87fadd104bba40c6cebb350a</model>
+        <model_id>8e1e516c87fadd104bba40c6cebb350a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:57</sys_created_on>
+        <sys_id>0e1e516c87fadd104bba40c6cebb3522</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">8e1e516c87fadd104bba40c6cebb350a</model>
+        <model_id>8e1e516c87fadd104bba40c6cebb350a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>421e516c87fadd104bba40c6cebb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">8e1e516c87fadd104bba40c6cebb350a</model>
+        <model_id>8e1e516c87fadd104bba40c6cebb350a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:57</sys_created_on>
+        <sys_id>8e1e516c87fadd104bba40c6cebb350c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=8e1e516c87fadd104bba40c6cebb350a^sys_idNOT IN461e516c87fadd104bba40c6cebb3540,5e1e516c87fadd104bba40c6cebb3559"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Retrieve Extracted Values">be5ce26253730110f9a4ddeeff7b125b</action_type>
+        <action_type_parent display_value="Retrieve Extracted Values">49bbe22253730110f9a4ddeeff7b12d7</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">8e1e516c87fadd104bba40c6cebb350a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>461e516c87fadd104bba40c6cebb3540</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <ui_id>5ca0a909-dd80-4da6-9668-dee941a90517</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=461e516c87fadd104bba40c6cebb3540"/>
+    <sys_element_mapping action="delete_multiple" query="id=461e516c87fadd104bba40c6cebb3540"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task</field>
+        <id>461e516c87fadd104bba40c6cebb3540</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>821e516c87fadd104bba40c6cebb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_be5ce26253730110f9a4ddeeff7b125b</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=461e516c87fadd104bba40c6cebb3540"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=461e516c87fadd104bba40c6cebb3540"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Set Extracted Values">56beeae253730110f9a4ddeeff7b124f</action_type>
+        <action_type_parent display_value="Set Extracted Values">088d22a253730110f9a4ddeeff7b12a1</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - LHH OA Invoice Test - LHH OA Extraction">8e1e516c87fadd104bba40c6cebb350a</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>5e1e516c87fadd104bba40c6cebb3559</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <ui_id>9a4849a5-73e5-45ab-bb78-96502f34c45f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5e1e516c87fadd104bba40c6cebb3559"/>
+    <sys_element_mapping action="delete_multiple" query="id=5e1e516c87fadd104bba40c6cebb3559"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>extracted_values</field>
+        <id>5e1e516c87fadd104bba40c6cebb3559</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>9e1e516c87fadd104bba40c6cebb355a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_56beeae253730110f9a4ddeeff7b124f</table>
+        <value>{{5ca0a909-dd80-4da6-9668-dee941a90517.result}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>5e1e516c87fadd104bba40c6cebb3559</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>161e516c87fadd104bba40c6cebb355b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_56beeae253730110f9a4ddeeff7b124f</table>
+        <value>{{Updated_1.current.source_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task</field>
+        <id>5e1e516c87fadd104bba40c6cebb3559</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>521e516c87fadd104bba40c6cebb355b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_56beeae253730110f9a4ddeeff7b124f</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5e1e516c87fadd104bba40c6cebb3559"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5e1e516c87fadd104bba40c6cebb3559"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a^sys_idNOT IN061e516c87fadd104bba40c6cebb351f,0e1e516c87fadd104bba40c6cebb352f,4a1e516c87fadd104bba40c6cebb3527"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:57</sys_created_on>
+        <sys_id>061e516c87fadd104bba40c6cebb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:58</sys_created_on>
+        <sys_id>0e1e516c87fadd104bba40c6cebb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:54:57</sys_created_on>
+        <sys_id>4a1e516c87fadd104bba40c6cebb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 04:54:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8e1e516c87fadd104bba40c6cebb350a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>a7ed992c87fadd104bba40c6cebb3557</sys_id>
+        <latest_snapshot>8e1e516c87fadd104bba40c6cebb350a</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch1-09-01-2022_09-16-2022_1610.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

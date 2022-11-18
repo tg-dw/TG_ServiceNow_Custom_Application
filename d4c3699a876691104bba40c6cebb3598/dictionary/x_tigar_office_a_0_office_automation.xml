@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ef2425da876691104bba40c6cebb35f3" extends="task" label="Office Automation" max_length="40" name="x_tigar_office_a_0_office_automation" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="OA 유형 직접입력" max_length="40" name="answer_directly" type="string"/>
+        <element label="Department" max_length="32" name="app_department" reference="cmn_department" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Employee Number" max_length="40" name="app_employee_number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Phone Number" max_length="40" name="app_phone_number" read_only="true" type="string"/>
+        <element label="Asset Item" max_length="32" name="asset_item" reference="alm_asset" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Bill To" max_length="40" name="bill_to" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Change Reason" max_length="40" name="change_reason" type="string"/>
+        <element label="Completed Date" max_length="40" name="completed_date" type="glide_date_time"/>
+        <element attributes="omit_sys_original=true" label="비용" max_length="20" name="currency" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="일시" max_length="40" name="date_of_theft" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice Date" max_length="40" name="invoice_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice Number" max_length="40" name="invoice_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="14" label="Labtop Display Size" max_length="40" name="labtop_dispaly_size" type="string">
+            <choice>
+                <element inactive_on_update="false" label="14인치" sequence="0" value="14"/>
+                <element inactive_on_update="false" label="15인치" sequence="1" value="15"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Monitor Display Size" max_length="40" name="monitor_display_size" type="string">
+            <choice>
+                <element inactive_on_update="false" label="24인치" sequence="0" value="24"/>
+                <element inactive_on_update="false" label="27인치" sequence="1" value="27"/>
+                <element inactive_on_update="false" label="30인치" sequence="2" value="30"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="OA Type" max_length="40" name="oa_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="노트북" sequence="0" value="laptop"/>
+                <element inactive_on_update="false" label="모니터" sequence="1" value="monitor"/>
+                <element inactive_on_update="false" label="프린터" sequence="2" value="printer"/>
+                <element inactive_on_update="false" label="전화기" sequence="3" value="phone"/>
+                <element inactive_on_update="false" label="직접입력" sequence="4" value="answer_directly"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Phone Type" max_length="40" name="phone_type" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="기업용 안드로이드폰" sequence="0" value="3"/>
+                <element inactive_on_update="false" label="유선 전화기" sequence="0" value="1"/>
+                <element inactive="true" inactive_on_update="true" label="기업용 아이폰" sequence="1" value="4"/>
+                <element inactive_on_update="false" label="인터넷 전화기" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="삼성 갤럭시" sequence="2" value="삼성 갤럭시"/>
+                <element inactive_on_update="false" label="애플 아이폰" sequence="3" value="애플 아이폰"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="장소" max_length="40" name="place_of_theft" type="string"/>
+        <element label="비용" max_length="40" name="price" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="대여 종료 날짜" max_length="40" name="rent_date_end" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="대여 시작 날짜" max_length="40" name="rent_date_start" type="glide_date"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" function_definition="g_user.userID" label="신청자" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Request Item Model Name" max_length="40" name="request_item" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="신규" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="대여" sequence="1" value="rent"/>
+                <element inactive_on_update="false" label="반납" sequence="2" value="return"/>
+                <element inactive_on_update="false" label="교체" sequence="3" value="replace"/>
+            </choice>
+        </element>
+        <element label="소속" max_length="32" name="req_department" reference="cmn_department" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="사번" max_length="40" name="req_employee_number" read_only="true" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="전화번호" max_length="40" name="req_phone_number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Responsibilities Of Office" max_length="40" name="responsibilities_of_office" type="string">
+            <choice>
+                <element inactive_on_update="false" label="대표이사" sequence="0" value="대표이사"/>
+                <element inactive_on_update="false" label="부사장" sequence="1" value="부사장"/>
+                <element inactive_on_update="false" label="영업 본부장" sequence="2" value="영업 본부장"/>
+                <element inactive_on_update="false" label="생산부장" sequence="3" value="생산부장"/>
+                <element inactive_on_update="false" label="총무과장" sequence="4" value="총무과장"/>
+                <element inactive_on_update="false" label="인사부장" sequence="5" value="인사부장"/>
+                <element inactive_on_update="false" label="지점장" sequence="6" value="지점장"/>
+                <element inactive_on_update="false" label="팀장" sequence="7" value="팀장"/>
+                <element inactive_on_update="false" label="부장" sequence="8" value="부장"/>
+                <element inactive_on_update="false" label="사원" sequence="9" value="사원"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Return Date" max_length="255" name="return_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Return Reason" max_length="40" name="return_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="경위" max_length="40" name="the_case" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Total Price" max_length="40" name="total_price" type="string"/>
+    </element>
+</database>

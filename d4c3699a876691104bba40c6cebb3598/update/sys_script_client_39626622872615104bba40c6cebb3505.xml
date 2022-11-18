@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>OA 요청 첫 로드 시 UI 설정&#13;
+// 로드 시 필드가 사라지는 게 보임 -&gt; 폼 로드 전에 설정하려면 어떻게 해야 할까&#13;
+// setVisible 메서드는 false 값인 경우 빈 칸으로 남음 -&gt; 더 깔끔하게 빈 자리를 채워서 하려면 setDisplay 사용해야 함&#13;
+// none 값으로 트리거하려면 UI Policy 사용하면 간편함 -&gt; null 또는 ''값으로 인식 안함</description>
+        <field>request_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OA make UI When Request type is Not None</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	var str = g_form.getValue('request_type');
+	if(str == ''){
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('request_item', false);
+		g_form.setDisplay('asset_item', false);
+		g_form.setDisplay('description', false);
+		g_form.setDisplay('short_description', false);
+		g_form.setDisplay('answer_directly', false);
+
+	}
+	else if(str == 'new'){
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+		g_form.setDisplay('short_description', true);
+		g_form.setDisplay('description', true);
+		g_form.setLabelOf('short_description', '사용목적');
+		g_form.setLabelOf('description', '추가 요청사항');
+		
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('asset_item', false);
+	}else if(str == 'rent'){
+		g_form.setDisplay('rent_date_start', true);
+		g_form.setDisplay('rent_date_end', true);
+		g_form.setDisplay('description', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setLabelOf('short_description', '사용목적');
+		g_form.setLabelOf('description', '추가 요청사항');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+		
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('asset_item', false);
+	}else if(str == 'return'){
+		g_form.setDisplay('return_date', true);
+		g_form.setDisplay('asset_item', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setLabelOf('short_description', '반납사유');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+		
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('description', false);		
+	}else if(str == 'replace'){
+		g_form.setDisplay('asset_item', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setDisplay('description', true);
+		g_form.setLabelOf('short_description', '변경사유');
+		g_form.setLabelOf('description', '추가 요청사항');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '새 모델명');
+		
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+	}
+// 	var str = g_form.getValue('request_type');
+// 	if(str != 'new' && str != 'rental' && str != 'return' && str != 'replace'){
+// 	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 04:45:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39626622872615104bba40c6cebb3505</sys_id>
+        <sys_name>OA make UI When Request type is Not None</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_39626622872615104bba40c6cebb3505</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

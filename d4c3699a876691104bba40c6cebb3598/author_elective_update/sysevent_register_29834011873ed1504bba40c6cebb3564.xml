@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <caller_access/>
+        <description>OA 레코드 Complete 상태로 업데이트 시 Complete 이후의 기간을 측정하기 위한 이벤트 발생</description>
+        <event_name>x_tigar_office_a_0.oa_when_record_comple</event_name>
+        <fired_by>Business Rules: Gen Event</fired_by>
+        <queue/>
+        <suffix>oa_when_record_complete</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-26 06:14:41</sys_created_on>
+        <sys_id>29834011873ed1504bba40c6cebb3564</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_tigar_office_a_0.oa_when_record_comple</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sysevent_register_29834011873ed1504bba40c6cebb3564</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-26 06:16:55</sys_updated_on>
+        <table>x_tigar_office_a_0_office_automation</table>
+    </sysevent_register>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>ef2edf6fdb99ec1852cec59705961992</instance_id>
+        <instance_name>timegatecorpdemo2</instance_name>
+        <name>sysevent_register_29834011873ed1504bba40c6cebb3564</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><caller_access/><description>OA 레코드 Complete 상태로 업데이트 시 Complete 이후의 기간을 측정하기 위한 이벤트 발생</description><event_name>x_tigar_office_a_0.oa_when_record_comple</event_name><fired_by>Business Rules: Gen Event</fired_by><queue/><suffix>oa_when_record_complete</suffix><sys_class_name>sysevent_register</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-10-26 06:14:41</sys_created_on><sys_id>29834011873ed1504bba40c6cebb3564</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_tigar_office_a_0.oa_when_record_comple</sys_name><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sysevent_register_29834011873ed1504bba40c6cebb3564</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-10-26 06:16:55</sys_updated_on><table>x_tigar_office_a_0_office_automation</table></sysevent_register></record_update>]]></payload>
+        <payload_hash>-240266876</payload_hash>
+        <record_name>x_tigar_office_a_0.oa_when_record_comple</record_name>
+        <reverted_from/>
+        <source>a4ef0da787ea59104bba40c6cebb35d6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-26 06:16:55</sys_created_on>
+        <sys_id>06048c11873ed1504bba40c6cebb3546</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18412efca6e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-26 06:16:55</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>8a048c111d3ed150b8bc2d4b78137145</update_guid>
+        <update_guid_history>8a048c111d3ed150b8bc2d4b78137145:-240266876,a9834011cf3ed150d41083db8496d766:-1894626118</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-26 07:20:44</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>0eca87f007f04094b1a1cfb3cbea5a90</sys_id>
+        <sys_metadata>29834011873ed1504bba40c6cebb3564</sys_metadata>
+        <sys_name>x_tigar_office_a_0.oa_when_record_comple</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent display_value="Office Automation">ef2425da876691104bba40c6cebb35f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sysevent_register_29834011873ed1504bba40c6cebb3564</sys_update_name>
+        <sys_update_version display_value="sysevent_register_29834011873ed1504bba40c6cebb3564">06048c11873ed1504bba40c6cebb3546</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

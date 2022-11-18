@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="di_task_definition">
+    <di_task_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autofill>true</autofill>
+        <autofill_threshold>0</autofill_threshold>
+        <component_version>22.1</component_version>
+        <display_name>LHH OA Invoice Test</display_name>
+        <ml_definition_ocr display_value="docintel_ocr_workflow_ca851dec87badd104bba40c6cebb3529">92955dec87badd104bba40c6cebb354b</ml_definition_ocr>
+        <ml_definition_pdf_preprocessing display_value="docintel_pdf_preprocessing_workflow_ca851dec87badd104bba40c6cebb3529">8e9519ec87badd104bba40c6cebb35e9</ml_definition_pdf_preprocessing>
+        <ml_definition_prediction display_value="docintel_prediction_workflow_ca851dec87badd104bba40c6cebb3529">0e955dec87badd104bba40c6cebb3541</ml_definition_prediction>
+        <ml_definition_training display_value="docintel_training_workflow_ca851dec87badd104bba40c6cebb3529">c6955dec87badd104bba40c6cebb3546</ml_definition_training>
+        <mluc_id/>
+        <source_record/>
+        <source_table_name/>
+        <state>current</state>
+        <stp_autofill_threshold>0.7</stp_autofill_threshold>
+        <stp_enabled>false</stp_enabled>
+        <sys_class_name>di_task_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:17:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ca851dec87badd104bba40c6cebb3529</sys_id>
+        <sys_name>LHH OA Invoice Test</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>di_task_definition_ca851dec87badd104bba40c6cebb3529</sys_update_name>
+        <target_table>x_tigar_office_a_0_office_automation</target_table>
+        <warning_threshold>0.7</warning_threshold>
+        <workflow_solutions_names_initialized>true</workflow_solutions_names_initialized>
+    </di_task_definition>
+</record_update>

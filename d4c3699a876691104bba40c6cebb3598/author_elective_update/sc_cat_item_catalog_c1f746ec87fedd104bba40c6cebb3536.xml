@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="OA 신청서">d3c506e887fedd104bba40c6cebb3538</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 07:57:51</sys_created_on>
+        <sys_id>c1f746ec87fedd104bba40c6cebb3536</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.OA 신청서</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_c1f746ec87fedd104bba40c6cebb3536</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 07:57:51</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>ef2edf6fdb99ec1852cec59705961992</instance_id>
+        <instance_name>timegatecorpdemo2</instance_name>
+        <name>sc_cat_item_catalog_c1f746ec87fedd104bba40c6cebb3536</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="OA 신청서">d3c506e887fedd104bba40c6cebb3538</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-10-24 07:57:51</sys_created_on><sys_id>c1f746ec87fedd104bba40c6cebb3536</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.OA 신청서</sys_name><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sc_cat_item_catalog_c1f746ec87fedd104bba40c6cebb3536</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-10-24 07:57:51</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>1264147650</payload_hash>
+        <record_name>Service Catalog.OA 신청서</record_name>
+        <reverted_from/>
+        <source>a4ef0da787ea59104bba40c6cebb35d6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 07:57:51</sys_created_on>
+        <sys_id>8df746ec87fedd104bba40c6cebb3545</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18408ff78630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-24 07:57:51</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>c1f746ec3bfedd10637f53bb85a49445</update_guid>
+        <update_guid_history>c1f746ec3bfedd10637f53bb85a49445:1264147650</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.OA 신청서">fa184aec87fedd104bba40c6cebb35fa</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 07:58:30</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>16667daf7ba241a486cffd6d11024b24</sys_id>
+        <sys_metadata>c1f746ec87fedd104bba40c6cebb3536</sys_metadata>
+        <sys_name>Service Catalog.OA 신청서</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent display_value="OA 신청서">d3c506e887fedd104bba40c6cebb3538</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_c1f746ec87fedd104bba40c6cebb3536</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_c1f746ec87fedd104bba40c6cebb3536">8df746ec87fedd104bba40c6cebb3545</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>OA System Properties</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-26 07:39:08</sys_created_on>
+        <sys_id>2786585d877ed1504bba40c6cebb3536</sys_id>
+        <sys_name>OA System Properties</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_properties_category_2786585d877ed1504bba40c6cebb3536</sys_update_name>
+        <title><![CDATA[<p>Office Automation 시스템 속성</p>]]></title>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=2786585d877ed1504bba40c6cebb3536"/>
+</record_update>

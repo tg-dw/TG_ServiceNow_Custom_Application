@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Office Automations">4cfa3d66872215104bba40c6cebb3541</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>OA 신청서 작성</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=d3c506e887fedd104bba40c6cebb3538</query>
+        <report/>
+        <roles>x_tigar_office_a_0.oa_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 08:25:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4a8d06e4877211504bba40c6cebb35c4</sys_id>
+        <sys_name>OA 신청서 작성</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_app_module_4a8d06e4877211504bba40c6cebb35c4</sys_update_name>
+        <timeline_page/>
+        <title>OA 신청서 작성</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="di_key">
+    <di_key action="DELETE">
+        <display_name>Invoice Date</display_name>
+        <group_index>0</group_index>
+        <key_group/>
+        <name>invoicedate</name>
+        <order>1</order>
+        <sys_class_name>di_key</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 04:19:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>bd06552087fadd104bba40c6cebb3501</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Invoice Date</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>di_key_bd06552087fadd104bba40c6cebb3501</sys_update_name>
+        <sys_updated_by>sharedservice.worker</sys_updated_by>
+        <sys_updated_on>2022-10-24 05:21:37</sys_updated_on>
+        <target_field>invoice_date</target_field>
+        <target_table>x_tigar_office_a_0_office_automation</target_table>
+        <task_definition display_value="LHH OA Invoice Test">ca851dec87badd104bba40c6cebb3529</task_definition>
+        <total_used_positive_samples>2</total_used_positive_samples>
+        <type>Text</type>
+    </di_key>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>ef2edf6fdb99ec1852cec59705961992</instance_id>
+        <instance_name>timegatecorpdemo2</instance_name>
+        <name>di_key_bd06552087fadd104bba40c6cebb3501</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="di_key"><di_key action="INSERT_OR_UPDATE"><display_name>Invoice Date</display_name><group_index>0</group_index><key_group/><name>invoicedate</name><order>1</order><sys_class_name>di_key</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-10-24 04:19:59</sys_created_on><sys_domain>global</sys_domain><sys_id>bd06552087fadd104bba40c6cebb3501</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Invoice Date</sys_name><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>di_key_bd06552087fadd104bba40c6cebb3501</sys_update_name><sys_updated_by>sharedservice.worker</sys_updated_by><sys_updated_on>2022-10-24 05:21:37</sys_updated_on><target_field>invoice_date</target_field><target_table>x_tigar_office_a_0_office_automation</target_table><task_definition display_value="LHH OA Invoice Test">ca851dec87badd104bba40c6cebb3529</task_definition><total_used_positive_samples>2</total_used_positive_samples><type>Text</type></di_key></record_update>]]></payload>
+        <payload_hash>1953173783</payload_hash>
+        <record_name>Invoice Date</record_name>
+        <reverted_from/>
+        <source>ea2829d2db740110b73b1472399619b1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sharedservice.worker</sys_created_by>
+        <sys_created_on>2022-10-24 05:21:37</sys_created_on>
+        <sys_id>2834eda4873edd104bba40c6cebb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18408706fde0000001</sys_recorded_at>
+        <sys_updated_by>sharedservice.worker</sys_updated_by>
+        <sys_updated_on>2022-10-24 05:21:37</sys_updated_on>
+        <type>Key</type>
+        <update_guid>ec34eda4c73edd10dd3a654f81e7646f</update_guid>
+        <update_guid_history>ec34eda4c73edd10dd3a654f81e7646f:1953173783,27d1a5e03b3edd10dd3b94af8829ec9d:-1386272234,b116d520c8fadd10e50be9db8a2ec3ce:-430750955</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Invoice Date">3644e1e4873edd104bba40c6cebb354a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 05:22:03</sys_created_on>
+        <sys_db_object display_value="" name="di_key">di_key</sys_db_object>
+        <sys_id>9c62351ccb494134a59e4807f32349a1</sys_id>
+        <sys_metadata>bd06552087fadd104bba40c6cebb3501</sys_metadata>
+        <sys_name>Invoice Date</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>di_key_bd06552087fadd104bba40c6cebb3501</sys_update_name>
+        <sys_update_version display_value="di_key_bd06552087fadd104bba40c6cebb3501">2834eda4873edd104bba40c6cebb3570</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

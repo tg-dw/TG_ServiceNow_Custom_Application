@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_tigar_office_a_0_office_automation">x_tigar_office_a_0_office_automation</category>
+        <maximum_digits>4</maximum_digits>
+        <number>1000</number>
+        <prefix>OA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-17 05:35:14</sys_created_on>
+        <sys_id>3b2465da876691104bba40c6cebb3571</sys_id>
+        <sys_name>OA</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_number_3b2465da876691104bba40c6cebb3571</sys_update_name>
+    </sys_number>
+</record_update>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>true</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="OA 신청서">d3c506e887fedd104bba40c6cebb3538</cat_item>
+        <cat_variable>IO:ce7746ac87fedd104bba40c6cebb35a4</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OA Request Type Make Different UI</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	
+	var str = g_form.getValue('request_type');
+	
+	if(str == 'new'){
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+		g_form.setDisplay('currency', true);
+		g_form.setDisplay('description', true);
+		g_form.setLabelOf('short_description', '사용목적');
+		g_form.setLabelOf('description', '추가 요청사항');
+
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('asset_item', false);
+		g_form.setDisplay('date_of_theft', false);
+		g_form.setDisplay('place_of_theft', false);
+		g_form.setDisplay('the_case', false);
+
+	}else if(str == 'rent'){
+		g_form.setDisplay('rent_date_start', true);
+		g_form.setDisplay('rent_date_end', true);
+		g_form.setDisplay('currency', true);
+		g_form.setDisplay('description', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setLabelOf('short_description', '사용목적');
+		g_form.setLabelOf('description', '추가 요청사항');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('asset_item', false);
+		g_form.setDisplay('date_of_theft', false);
+		g_form.setDisplay('place_of_theft', false);
+		g_form.setDisplay('the_case', false);
+
+	}else if(str == 'return'){
+		g_form.setDisplay('return_date', true);
+		g_form.setDisplay('asset_item', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setLabelOf('short_description', '반납사유');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('description', false);
+		g_form.setDisplay('date_of_theft', false);
+		g_form.setDisplay('place_of_theft', false);
+		g_form.setDisplay('the_case', false);
+		g_form.setDisplay('currency', false);
+
+	}else if(str == 'replace'){
+		g_form.setDisplay('asset_item', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setDisplay('description', true);
+		g_form.setLabelOf('short_description', '변경사유');
+		g_form.setLabelOf('description', '추가 요청사항');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '새 모델명');
+
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('date_of_theft', false);
+		g_form.setDisplay('place_of_theft', false);
+		g_form.setDisplay('the_case', false);
+		g_form.setDisplay('currency', false);
+		
+	}else if(str == 'lost'){
+		g_form.setDisplay('asset_item', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setDisplay('description', true);
+		g_form.setLabelOf('short_description', '변경사유');
+		g_form.setLabelOf('description', '추가 요청사항');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '새 모델명');
+
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+			
+		//g_form.setDisplay('cl9mi7c6a000q3b7v0hdf3n5z', true);
+		g_form.setDisplay('date_of_theft', true);
+		g_form.setDisplay('place_of_theft', true);
+		g_form.setDisplay('the_case', true);
+		g_form.setDisplay('currency', false);
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-25 00:40:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0fac6dbc877651504bba40c6cebb3513</sys_id>
+        <sys_name>OA Request Type Make Different UI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>catalog_script_client_0fac6dbc877651504bba40c6cebb3513</sys_update_name>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

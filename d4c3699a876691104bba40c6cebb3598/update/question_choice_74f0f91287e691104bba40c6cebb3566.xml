@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="OA 구분">18a0711287e691104bba40c6cebb3518</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-17 06:31:01</sys_created_on>
+        <sys_id>74f0f91287e691104bba40c6cebb3566</sys_id>
+        <sys_name>전화기</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>question_choice_74f0f91287e691104bba40c6cebb3566</sys_update_name>
+        <text>전화기</text>
+        <value>phone</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=74f0f91287e691104bba40c6cebb3566"/>
+</record_update>

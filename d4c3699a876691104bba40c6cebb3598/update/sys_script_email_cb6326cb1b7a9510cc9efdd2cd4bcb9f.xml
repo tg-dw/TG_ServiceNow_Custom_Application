@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>RESTAirkoreaResponse</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+										   /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+										   /* Optional GlideRecord */ event) {
+
+	
+	try { 
+		var r = new sn_ws.RESTMessageV2('x_tigar_office_a_0.airKorea', 'Default GET');
+		r.setStringParameterNoEscape('serviceKey', 'FJsAIwcFpnRR9Uyso2fhAtH8F0P30G1d57fmGwGGbgjalu7oNFw7qr+lrxI4ts89SpG8oQ811F9229+OCMdNtQ==');
+		r.setStringParameterNoEscape('pageNo', '1');
+		r.setStringParameterNoEscape('numOfRows', '30');
+		r.setStringParameterNoEscape('sidoName', '서울');
+		r.setStringParameterNoEscape('returnType', 'xml');
+		r.setStringParameterNoEscape('version', '1.0');
+
+		//override authentication profile 
+		//authentication type ='basic'/ 'oauth2'
+		//r.setAuthenticationProfile(authentication type, profile name);
+
+		//set a MID server name if one wants to run the message on MID
+		//r.setMIDServer('MY_MID_SERVER');
+
+		//if the message is configured to communicate through ECC queue, either
+		//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+		//to true. Otherwise, one may get an intermittent error that the response body is null
+		//r.setEccParameter('skip_sensor', true);
+
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		var xmlDoc = new XMLDocument2();
+		xmlDoc.parseXML(responseBody);
+		
+		var sidoString = "";
+		var dataTimeString = "";
+		var stationString = "";
+		var pm10ValueSum = 0.0;
+		var pm25ValueSum = 0.0;
+		var pm10ValueAvg = 0.0;
+		var pm25ValueAvg = 0.0;
+		var cnt = 0.0;
+		
+		var rootNode = xmlDoc.getFirstNode('//item');
+		
+		while(rootNode != null) {
+			var childIterator = rootNode.getChildNodeIterator();
+			
+			while (childIterator.hasNext()) {
+				var childNode      = childIterator.next();
+				var childNodeName  = childNode.getNodeName();
+				var childNodeValue = childNode.getTextContent();
+				
+				if(childNodeName == "sidoName" && childNodeValue != null){
+					sidoString = childNodeValue;
+				}else if(childNodeName == "dataTime" && childNodeValue != null){
+					dataTimeString = childNodeValue;
+				}else if(childNodeName == "stationName" && childNodeValue != null){
+					stationString += childNodeValue + ", ";
+					cnt++;
+				}else if(childNodeName == "pm10Value" && childNodeValue > 0){
+					pm10ValueSum += parseInt(childNodeValue);
+				}else if(childNodeName == "pm25Value" && childNodeValue > 0){
+					pm25ValueSum += parseInt(childNodeValue);
+				}
+				//gs.info("CHILD/" + childNode.getNodeName() + " : " + childNode.getTextContent());
+			}
+			//gs.info("ITEM/rootNode : " + rootNode);
+			rootNode = xmlDoc.getNextNode(rootNode);
+		}
+		
+		stationString = stationString.slice(0, -2);
+		pm10ValueAvg = pm10ValueSum/cnt;
+		pm25ValueAvg = pm25ValueSum/cnt;
+		//gs.info("TEST/stationString : " + stationString);
+		//gs.info("TEST/pm10ValueSum : " + pm10ValueAvg);
+		//gs.info("TEST/pm25ValueSum : " + pm25ValueAvg);
+		
+		//이메일에 출력
+		template.print("시도명 : " + sidoString + "<br>");
+		template.print("측정소 정보 : " + stationString + "<br>");
+		template.print("측정일시 : " + dataTimeString + "<br>");
+		template.print(cnt + "개 측정소 " + "미세먼지(PM 10) 농도 평균: " + pm10ValueAvg.toFixed(2) + "<br>");
+		template.print(cnt + "개 측정소 " + "초미세먼지(PM 2.5) 농도 평균: " + pm25ValueAvg.toFixed(2) + "<br><br>");
+	}
+	catch(ex) {
+		var message = ex.message;
+	}
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-01 04:34:03</sys_created_on>
+        <sys_id>cb6326cb1b7a9510cc9efdd2cd4bcb9f</sys_id>
+        <sys_name>RESTAirkoreaResponse</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_email_cb6326cb1b7a9510cc9efdd2cd4bcb9f</sys_update_name>
+    </sys_script_email>
+</record_update>

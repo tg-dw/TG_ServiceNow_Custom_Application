@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_tigar_office_a_0_office_automation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>OA DepartmentReference field dot walking</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	current.req_department = current.requested_by.department;
+	if(current.requested_by != ""){
+		
+		//참조필드끼리는 이렇게 수행 됨
+		current.req_department = current.requested_by.department;
+
+		//비참조 필드의 값을 설정하거나 비참조 필드에서 값을 가져오는 경우
+		current.req_employee_number = current.requested_by.employee_number.getDisplayValue();
+		current.req_phone_number = current.requested_by.mobile_phone.getDisplayValue();;
+	}
+
+	if(current.assigned_to != ""){
+		current.app_department = current.assigned_to.department;
+		current.app_employee_number = current.assigned_to.employee_number.getDisplayValue();
+		current.app_phone_number = current.assigned_to.mobile_phone.getDisplayValue();
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 08:11:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1feec366872a15104bba40c6cebb35af</sys_id>
+        <sys_name>OA DepartmentReference field dot walking</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_1feec366872a15104bba40c6cebb35af</sys_update_name>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=1feec366872a15104bba40c6cebb35af"/>
+</record_update>

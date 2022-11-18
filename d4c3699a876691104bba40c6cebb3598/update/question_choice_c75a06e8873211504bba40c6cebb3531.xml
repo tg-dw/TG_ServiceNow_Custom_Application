@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="요청 유형">ce7746ac87fedd104bba40c6cebb35a4</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-24 08:08:21</sys_created_on>
+        <sys_id>c75a06e8873211504bba40c6cebb3531</sys_id>
+        <sys_name>대여</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>question_choice_c75a06e8873211504bba40c6cebb3531</sys_update_name>
+        <text>대여</text>
+        <value>rent</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=c75a06e8873211504bba40c6cebb3531"/>
+</record_update>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="oa_type" table="x_tigar_office_a_0_office_automation" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>oa_type</element>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 07:09:48</sys_created_on>
+            <sys_name>oa_type</sys_name>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_choice_x_tigar_office_a_0_office_automation_oa_type</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oa_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>노트북</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 07:09:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>laptop</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oa_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>모니터</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 07:09:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>monitor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oa_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>프린터</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 07:09:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>printer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oa_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>전화기</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 07:09:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>phone</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oa_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>직접입력</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-28 06:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>answer_directly</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

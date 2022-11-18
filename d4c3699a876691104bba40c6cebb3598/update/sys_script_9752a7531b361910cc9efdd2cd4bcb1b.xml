@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_tigar_office_a_0_office_automation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>REST TEST_Email Script</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	//이 코드는 airkorea 오픈 소스를 REST API를 통해 응답받는 소스이다.
+	//이메일 알림에 airkorea 오픈 소스를 포함시켜 보자...
+	//이메일에 스크립트를 포함시키는 Notification Email Scripts를 사용하자
+	//Notification Email Scripts는 Scoped 이지만, studio가 아닌 기본 인스턴스에서 액세스할 수 있다.
+	try { 
+		var r = new sn_ws.RESTMessageV2('x_tigar_office_a_0.airKorea', 'Default GET');
+		r.setStringParameterNoEscape('serviceKey', 'FJsAIwcFpnRR9Uyso2fhAtH8F0P30G1d57fmGwGGbgjalu7oNFw7qr+lrxI4ts89SpG8oQ811F9229+OCMdNtQ==');
+		r.setStringParameterNoEscape('pageNo', '1');
+		r.setStringParameterNoEscape('numOfRows', '30');
+		r.setStringParameterNoEscape('sidoName', '서울');
+		r.setStringParameterNoEscape('returnType', 'xml');
+		r.setStringParameterNoEscape('version', '1.0');
+
+		//override authentication profile 
+		//authentication type ='basic'/ 'oauth2'
+		//r.setAuthenticationProfile(authentication type, profile name);
+
+		//set a MID server name if one wants to run the message on MID
+		//r.setMIDServer('MY_MID_SERVER');
+
+		//if the message is configured to communicate through ECC queue, either
+		//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+		//to true. Otherwise, one may get an intermittent error that the response body is null
+		//r.setEccParameter('skip_sensor', true);
+
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		var xmlDoc = new XMLDocument2();
+		xmlDoc.parseXML(responseBody);
+
+		var sidoString = "";
+		var dataTimeString = "";
+		var stationString = "";
+		var pm10ValueSum = 0.0;
+		var pm25ValueSum = 0.0;
+		var pm10ValueAvg = 0.0;
+		var pm25ValueAvg = 0.0;
+		var cnt = 0.0;
+
+		var rootNode = xmlDoc.getFirstNode('//item');
+
+		while(rootNode != null) {
+			var childIterator = rootNode.getChildNodeIterator();
+
+			while (childIterator.hasNext()) {
+				var childNode      = childIterator.next();
+				var childNodeName  = childNode.getNodeName();
+				var childNodeValue = childNode.getTextContent();
+
+				if(childNodeName == "sidoName" && childNodeValue != null){
+					sidoString = childNodeValue;
+				}else if(childNodeName == "dataTime" && childNodeValue != null){
+					dataTimeString = childNodeValue;
+				}else if(childNodeName == "stationName" && childNodeValue != null){
+					stationString += childNodeValue + ", ";
+					cnt++;
+				}else if(childNodeName == "pm10Value" && childNodeValue > 0){
+					pm10ValueSum += parseInt(childNodeValue);
+				}else if(childNodeName == "pm25Value" && childNodeValue > 0){
+					pm25ValueSum += parseInt(childNodeValue);
+				}
+				//gs.info("CHILD/" + childNode.getNodeName() + " : " + childNode.getTextContent());
+			}
+			//gs.info("ITEM/rootNode : " + rootNode);
+			rootNode = xmlDoc.getNextNode(rootNode);
+		}
+
+		stationString = stationString.slice(0, -2);
+		pm10ValueAvg = pm10ValueSum/cnt;
+		pm25ValueAvg = pm25ValueSum/cnt;
+		
+		gs.info("TEST/시도명 : " + sidoString);
+		gs.info("TEST/측정소 : " + stationString);
+		gs.info("TEST/측정일시 : " + dataTimeString);
+		gs.info("TEST/미세먼지 농도 평균 : " + pm10ValueAvg.toFixed(2));
+		gs.info("TEST/초미세먼지 농도 평균 : " + pm25ValueAvg.toFixed(2));
+	}
+	catch(ex) {
+		var message = ex.message;
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-02 03:40:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9752a7531b361910cc9efdd2cd4bcb1b</sys_id>
+        <sys_name>REST TEST_Email Script</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_9752a7531b361910cc9efdd2cd4bcb1b</sys_update_name>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9752a7531b361910cc9efdd2cd4bcb1b"/>
+</record_update>

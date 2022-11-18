@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="responsibilities_of_office" table="x_tigar_office_a_0_office_automation" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>responsibilities_of_office</element>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:13</sys_created_on>
+            <sys_name>responsibilities_of_office</sys_name>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_choice_x_tigar_office_a_0_office_automation_responsibilities_of_office</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>대표이사</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>대표이사</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>부사장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>부사장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>영업 본부장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>영업 본부장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>생산부장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>생산부장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>총무과장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>총무과장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>인사부장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>인사부장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>지점장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>지점장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>팀장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>팀장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>부장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>부장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>responsibilities_of_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>사원</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>사원</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

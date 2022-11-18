@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_tigar_office_a_0_office_automation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>OA AirKorea REST TEST</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	try { 
+		var r = new sn_ws.RESTMessageV2('x_tigar_office_a_0.airKorea', 'Default GET');
+		r.setStringParameterNoEscape('serviceKey', 'FJsAIwcFpnRR9Uyso2fhAtH8F0P30G1d57fmGwGGbgjalu7oNFw7qr+lrxI4ts89SpG8oQ811F9229+OCMdNtQ==');
+		r.setStringParameterNoEscape('pageNo', '1');
+		r.setStringParameterNoEscape('numOfRows', '10');
+		r.setStringParameterNoEscape('sidoName', '서울');
+		r.setStringParameterNoEscape('returnType', 'xml');
+		r.setStringParameterNoEscape('version', '1.0');
+
+		//override authentication profile 
+		//authentication type ='basic'/ 'oauth2'
+		//r.setAuthenticationProfile(authentication type, profile name);
+
+		//set a MID server name if one wants to run the message on MID
+		//r.setMIDServer('MY_MID_SERVER');
+
+		//if the message is configured to communicate through ECC queue, either
+		//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+		//to true. Otherwise, one may get an intermittent error that the response body is null
+		//r.setEccParameter('skip_sensor', true);
+
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		var xmlDoc = new XMLDocument2();
+		xmlDoc.parseXML(responseBody);
+
+		var stationString = "측정소명 : ";
+		var pm10ValueSum = 0.0;
+		var pm25ValueSum = 0.0;
+		var pm10ValueAvg = 0.0;
+		var pm25ValueAvg = 0.0;
+		var cnt = 0.0;
+
+		var rootNode = xmlDoc.getFirstNode('//item');
+
+		while(rootNode != null) {
+			var childIterator = rootNode.getChildNodeIterator();
+
+			while (childIterator.hasNext()) {
+				var childNode      = childIterator.next();
+				var childNodeName  = childNode.getNodeName();
+				var childNodeValue = childNode.getTextContent();
+				if(childNodeName == "stationName" && childNodeValue != null){
+					stationString += childNodeValue + ", ";
+					cnt++;
+				}
+				if(childNodeName == "pm10Value" && childNodeValue > 0){
+					pm10ValueSum += parseInt(childNodeValue);
+				}
+				if(childNodeName == "pm25Value" && childNodeValue > 0){
+					pm25ValueSum += parseInt(childNodeValue);
+				}
+				//gs.info("CHILD/" + childNode.getNodeName() + " : " + childNode.getTextContent());
+			}
+			//gs.info("ITEM/rootNode : " + rootNode);
+			rootNode = xmlDoc.getNextNode(rootNode);
+		}
+		pm10ValueAvg = pm10ValueSum/cnt;
+		pm25ValueAvg = pm25ValueSum/cnt;
+		gs.info("TEST/stationString : " + stationString);
+		gs.info("TEST/pm10ValueSum : " + pm10ValueAvg);
+		gs.info("TEST/pm25ValueSum : " + pm25ValueAvg);
+
+		current.description = "미세먼지(PM 10) 농도 평균: " + pm10ValueAvg + "초미세먼지(PM 2.5) 농도 평균: " + pm25ValueAvg;
+	}
+	catch(ex) {
+		var message = ex.message;
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-31 08:38:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fdf39a761bf25510cc9efdd2cd4bcbc2</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>OA AirKorea REST TEST</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_fdf39a761bf25510cc9efdd2cd4bcbc2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-01 09:05:14</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=fdf39a761bf25510cc9efdd2cd4bcbc2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>ef2edf6fdb99ec1852cec59705961992</instance_id>
+        <instance_name>timegatecorpdemo2</instance_name>
+        <name>sys_script_fdf39a761bf25510cc9efdd2cd4bcbc2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_tigar_office_a_0_office_automation&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;OA AirKorea REST TEST&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	try { 
+		var r = new sn_ws.RESTMessageV2('x_tigar_office_a_0.airKorea', 'Default GET');
+		r.setStringParameterNoEscape('serviceKey', 'FJsAIwcFpnRR9Uyso2fhAtH8F0P30G1d57fmGwGGbgjalu7oNFw7qr+lrxI4ts89SpG8oQ811F9229+OCMdNtQ==');
+		r.setStringParameterNoEscape('pageNo', '1');
+		r.setStringParameterNoEscape('numOfRows', '10');
+		r.setStringParameterNoEscape('sidoName', '서울');
+		r.setStringParameterNoEscape('returnType', 'xml');
+		r.setStringParameterNoEscape('version', '1.0');
+
+		//override authentication profile 
+		//authentication type ='basic'/ 'oauth2'
+		//r.setAuthenticationProfile(authentication type, profile name);
+
+		//set a MID server name if one wants to run the message on MID
+		//r.setMIDServer('MY_MID_SERVER');
+
+		//if the message is configured to communicate through ECC queue, either
+		//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+		//to true. Otherwise, one may get an intermittent error that the response body is null
+		//r.setEccParameter('skip_sensor', true);
+
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		var xmlDoc = new XMLDocument2();
+		xmlDoc.parseXML(responseBody);
+
+		var stationString = "측정소명 : ";
+		var pm10ValueSum = 0.0;
+		var pm25ValueSum = 0.0;
+		var pm10ValueAvg = 0.0;
+		var pm25ValueAvg = 0.0;
+		var cnt = 0.0;
+
+		var rootNode = xmlDoc.getFirstNode('//item');
+
+		while(rootNode != null) {
+			var childIterator = rootNode.getChildNodeIterator();
+
+			while (childIterator.hasNext()) {
+				var childNode      = childIterator.next();
+				var childNodeName  = childNode.getNodeName();
+				var childNodeValue = childNode.getTextContent();
+				if(childNodeName == "stationName" &amp;&amp; childNodeValue != null){
+					stationString += childNodeValue + ", ";
+					cnt++;
+				}
+				if(childNodeName == "pm10Value" &amp;&amp; childNodeValue &gt; 0){
+					pm10ValueSum += parseInt(childNodeValue);
+				}
+				if(childNodeName == "pm25Value" &amp;&amp; childNodeValue &gt; 0){
+					pm25ValueSum += parseInt(childNodeValue);
+				}
+				//gs.info("CHILD/" + childNode.getNodeName() + " : " + childNode.getTextContent());
+			}
+			//gs.info("ITEM/rootNode : " + rootNode);
+			rootNode = xmlDoc.getNextNode(rootNode);
+		}
+		pm10ValueAvg = pm10ValueSum/cnt;
+		pm25ValueAvg = pm25ValueSum/cnt;
+		gs.info("TEST/stationString : " + stationString);
+		gs.info("TEST/pm10ValueSum : " + pm10ValueAvg);
+		gs.info("TEST/pm25ValueSum : " + pm25ValueAvg);
+
+		current.description = "미세먼지(PM 10) 농도 평균: " + pm10ValueAvg + "초미세먼지(PM 2.5) 농도 평균: " + pm25ValueAvg;
+	}
+	catch(ex) {
+		var message = ex.message;
+	}
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-31 08:38:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fdf39a761bf25510cc9efdd2cd4bcbc2&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;OA AirKorea REST TEST&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Office Automation" source="x_tigar_office_a_0"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Office Automation"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fdf39a761bf25510cc9efdd2cd4bcbc2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-01 09:05:14&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fdf39a761bf25510cc9efdd2cd4bcbc2"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1123225571</payload_hash>
+        <record_name>OA AirKorea REST TEST</record_name>
+        <reverted_from/>
+        <source>a4ef0da787ea59104bba40c6cebb35d6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-01 09:05:15</sys_created_on>
+        <sys_id>9614ab431bfe9510cc9efdd2cd4bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18432700d280000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-01 09:05:15</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>5a14ab4338fe9510ff0993a9ca4c63f6</update_guid>
+        <update_guid_history>5a14ab4338fe9510ff0993a9ca4c63f6:-1123225571,c0e3a743d9fe95102f81cd5a37624780:-1962937805,46432b039afe95109ebea063fdee896c:-1657666038,c8c59b8f597e9510fcc6558188669c94:-88505710,a28c6a8786ba95106c402b5cdcd61eab:-1033218523,d63aa607baba9510214f174ef3cc262c:-198109692,5f50e2c77f7a9510bf112a5011883862:-182821538,8850a2c75e7a9510ed4c98dfdb71da57:2108974987,d400ae47957a9510bc1243faf40b7334:-1308434015,6459de3ef7f25510acafefe10a57588b:-640191692,872516f6c8f25510530cca50d8603dfd:-787338202,4105d2f60cf25510c42df4f3d40d1cf1:1507872310,466416b66ff255103bb459e3002f2db3:227243618</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-01 09:05:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>01e6812db32c4f5c8d53be36dfe77c84</sys_id>
+        <sys_metadata>fdf39a761bf25510cc9efdd2cd4bcbc2</sys_metadata>
+        <sys_name>OA AirKorea REST TEST</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent display_value="Office Automation">ef2425da876691104bba40c6cebb35f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_script_fdf39a761bf25510cc9efdd2cd4bcbc2</sys_update_name>
+        <sys_update_version display_value="sys_script_fdf39a761bf25510cc9efdd2cd4bcbc2">9614ab431bfe9510cc9efdd2cd4bcbf7</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>email.subject. startsWith ( "RE: ServiceNow OA :" )</condition_script>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>OA Complete Inbound Email Action</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+	
+	current.state = 5;
+	current.update();
+	
+// 	// Implement email action here
+// 	var gr = new GlideRecord('x_tigar_office_a_0_office_automation');
+// 	gr.addQuery('state', 5);
+// 	gr.query();
+	
+// 	while(gr.next()){
+// 		gr.state = 6;
+// 		gr.update();
+// 	}
+	
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-26 08:49:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9126e019873215504bba40c6cebb3508</sys_id>
+        <sys_name>OA Complete Inbound Email Action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sysevent_in_email_action_9126e019873215504bba40c6cebb3508</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

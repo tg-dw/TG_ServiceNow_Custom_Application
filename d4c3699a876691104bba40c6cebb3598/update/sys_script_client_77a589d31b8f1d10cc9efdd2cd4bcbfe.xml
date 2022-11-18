@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>상태값 별로 Form 내 필드의 리드온리 속성을 설정</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OA Set Readonly by State</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	var currentState = g_form.getValue('state');
+   if( currentState > 0 && currentState >= 2 ){
+	   // 제출 이후 요청 유형 및 상세 정보 수정 불가능
+	   g_form.setReadOnly('requested_by', true);
+	   g_form.setReadOnly('req_department', true);
+	   g_form.setReadOnly('app_department', true);
+	   g_form.setReadOnly('request_type', true);
+	   g_form.setReadOnly('rent_date_start', true);
+	   g_form.setReadOnly('rent_date_end', true);
+	   g_form.setReadOnly('oa_type', true);
+	   g_form.setReadOnly('monitor_display_size', true);
+	   g_form.setReadOnly('labtop_dispaly_size', true);
+	   g_form.setReadOnly('phone_type', true);
+	   g_form.setReadOnly('request_item', true);
+	   g_form.setReadOnly('currency', true);
+	   g_form.setReadOnly('short_description', true);
+	   g_form.setReadOnly('description', true);
+   }else if( currentState < 0 ){ 
+	   // 승인 거절, 보류 상태에서는 요청 유형 및 상세 정보 수정 가능
+	   g_form.setReadOnly('request_type', false);
+	   g_form.setReadOnly('rent_date_start', false);
+	   g_form.setReadOnly('rent_date_end', false);
+	   g_form.setReadOnly('oa_type', false);
+	   g_form.setReadOnly('monitor_display_size', false);
+	   g_form.setReadOnly('labtop_display_size', false);
+	   g_form.setReadOnly('phone_type', false);
+	   g_form.setReadOnly('request_item', false);
+	   g_form.setReadOnly('currency', false);
+	   g_form.setReadOnly('short_description', false);
+	   g_form.setReadOnly('description', false);
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-14 02:43:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77a589d31b8f1d10cc9efdd2cd4bcbfe</sys_id>
+        <sys_name>OA Set Readonly by State</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_77a589d31b8f1d10cc9efdd2cd4bcbfe</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="요청 유형 및 상세 정보" section_id="55d9399e87e691104bba40c6cebb3539" sys_domain="global" table="x_tigar_office_a_0_office_automation" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_type</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a9844a121b4fd510cc9efdd2cd4bcbc5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rent_date_start</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a1844a121b4fd510cc9efdd2cd4bcbc6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rent_date_end</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a5844a121b4fd510cc9efdd2cd4bcbc6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_date</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a9844a121b4fd510cc9efdd2cd4bcbc6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_item</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>ad844a121b4fd510cc9efdd2cd4bcbc6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a1844a121b4fd510cc9efdd2cd4bcbc7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a5844a121b4fd510cc9efdd2cd4bcbc7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>oa_type</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a9844a121b4fd510cc9efdd2cd4bcbc7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>answer_directly</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>ad844a121b4fd510cc9efdd2cd4bcbc7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>labtop_dispaly_size</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a1844a121b4fd510cc9efdd2cd4bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>monitor_display_size</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a5844a121b4fd510cc9efdd2cd4bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone_type</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a9844a121b4fd510cc9efdd2cd4bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_item</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>ad844a121b4fd510cc9efdd2cd4bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>currency</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a1844a121b4fd510cc9efdd2cd4bcbc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-11 04:27:55</sys_created_on>
+            <sys_id>a5844a121b4fd510cc9efdd2cd4bcbc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="요청 유형 및 상세 정보" display_value="요청 유형 및 상세 정보" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">55d9399e87e691104bba40c6cebb3539</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-11 04:27:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>요청 유형 및 상세 정보</caption>
+            <header>false</header>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-17 07:09:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55d9399e87e691104bba40c6cebb3539</sys_id>
+            <sys_name>x_tigar_office_a_0_office_automation</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_ui_section_55d9399e87e691104bba40c6cebb3539</sys_update_name>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

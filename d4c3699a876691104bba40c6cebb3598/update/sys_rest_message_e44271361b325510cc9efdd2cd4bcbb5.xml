@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>OA 기상청 단기예보 조회서비스 오픈 API (공공데이터포털)</description>
+        <name>OA Outbound REST Message</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-31 06:15:49</sys_created_on>
+        <sys_id>e44271361b325510cc9efdd2cd4bcbb5</sys_id>
+        <sys_name>OA Outbound REST Message</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_rest_message_e44271361b325510cc9efdd2cd4bcbb5</sys_update_name>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

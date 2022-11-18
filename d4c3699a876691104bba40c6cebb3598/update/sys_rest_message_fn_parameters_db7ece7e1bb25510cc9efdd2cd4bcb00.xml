@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>base_date</name>
+        <rest_message_function display_value="Default GET">fab3fd361b325510cc9efdd2cd4bcb5c</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-31 08:12:44</sys_created_on>
+        <sys_id>db7ece7e1bb25510cc9efdd2cd4bcb00</sys_id>
+        <sys_name>base_date</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_db7ece7e1bb25510cc9efdd2cd4bcb00</sys_update_name>
+        <type>string</type>
+        <value>1700</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="di_key_group">
+    <di_key_group action="INSERT_OR_UPDATE">
+        <display_name>OA Invoice Key Group</display_name>
+        <is_list>true</is_list>
+        <parent_mapping_to_field>contract</parent_mapping_to_field>
+        <sys_class_name>di_key_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-15 00:39:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6ac4f1671bc79d10cc9efdd2cd4bcb3e</sys_id>
+        <sys_name>OA Invoice Key Group</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>di_key_group_6ac4f1671bc79d10cc9efdd2cd4bcb3e</sys_update_name>
+        <target_table>x_tigar_office_a_0_office_automation</target_table>
+        <task_definition display_value="LHH OA Invoice Test">ca851dec87badd104bba40c6cebb3529</task_definition>
+    </di_key_group>
+</record_update>

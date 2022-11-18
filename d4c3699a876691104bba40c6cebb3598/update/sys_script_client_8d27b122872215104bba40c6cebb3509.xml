@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>요청 타입 변경 시 그에 알맞는 UI가 나타남,&#13;
+OA make UI When Request type is None</description>
+        <field>request_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OA Request Type Make Different UI</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+	var str = g_form.getValue('request_type');
+	
+	if(str == 'new'){
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+		g_form.setDisplay('short_description', true);
+		g_form.setDisplay('description', true);
+		g_form.setLabelOf('short_description', '사용목적');
+		g_form.setLabelOf('description', '추가 요청사항');
+		
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('asset_item', false);
+		
+	}else if(str == 'rent'){
+		g_form.setDisplay('rent_date_start', true);
+		g_form.setDisplay('rent_date_end', true);
+		g_form.setDisplay('description', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setLabelOf('short_description', '사용목적');
+		g_form.setLabelOf('description', '추가 요청사항');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+		
+		g_form.setDisplay('return_date', false);
+		g_form.setDisplay('asset_item', false);
+		
+	}else if(str == 'return'){
+		g_form.setDisplay('return_date', true);
+		g_form.setDisplay('asset_item', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setLabelOf('short_description', '반납사유');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '모델명');
+		
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('description', false);
+
+	}else if(str == 'replace'){
+		g_form.setDisplay('asset_item', true);
+		g_form.setDisplay('short_description', true);
+		g_form.setDisplay('description', true);
+		g_form.setLabelOf('short_description', '변경사유');
+		g_form.setLabelOf('description', '추가 요청사항');
+		g_form.setDisplay('request_item', true);
+		g_form.setLabelOf('request_item', '새 모델명');
+		
+		g_form.setDisplay('rent_date_start', false);
+		g_form.setDisplay('rent_date_end', false);
+		g_form.setDisplay('return_date', false);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 01:52:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8d27b122872215104bba40c6cebb3509</sys_id>
+        <sys_name>OA Request Type Make Different UI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_8d27b122872215104bba40c6cebb3509</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

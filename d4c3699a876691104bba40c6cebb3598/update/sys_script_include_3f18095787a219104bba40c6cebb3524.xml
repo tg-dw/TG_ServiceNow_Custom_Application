@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_tigar_office_a_0.OA_Lookup_User_Info</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>신청자가 변경되면 해당 신청자의 사번 필드를 자동으로 채움 -&gt; 전화번호, 소속 필드도 배열에 대입하여 반환 필요&#13;
+글라이드레코드 : Scoped Application에서 사용할 수 없음 -&gt; Script Include &amp; GlideAjax 활용</description>
+        <name>OA_Lookup_User_Info</name>
+        <script><![CDATA[var OA_Lookup_User_Info = Class.create();
+OA_Lookup_User_Info.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getUserInfo:function(){
+		var returnValue=""; // 소속/사번/전화번호
+		var userID = this.getParameter('userID');
+		gs.info('스크립트 인클루드 사용');
+		var userGr = new GlideRecord('sys_user');
+		userGr.addQuery('sys_id',userID);
+		userGr.query();
+
+		if(userGr.next()){
+			returnValue += userGr.department + "/"; //레퍼런스 필드는 sys_id를 가져와야 클라이언트 측에서 입력이 원할
+			returnValue += userGr.employee_number + "/";
+			returnValue += userGr.mobile_phone;
+		}
+		return returnValue;
+	},
+	type: 'OA_Lookup_User_Info'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-20 06:16:48</sys_created_on>
+        <sys_id>3f18095787a219104bba40c6cebb3524</sys_id>
+        <sys_name>OA_Lookup_User_Info</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_include_3f18095787a219104bba40c6cebb3524</sys_update_name>
+    </sys_script_include>
+</record_update>

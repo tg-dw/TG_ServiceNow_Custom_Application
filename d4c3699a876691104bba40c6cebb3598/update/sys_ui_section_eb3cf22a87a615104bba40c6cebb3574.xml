@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="도난/손실 신고서 관련" section_id="eb3cf22a87a615104bba40c6cebb3574" sys_domain="global" table="x_tigar_office_a_0_office_automation" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_of_theft</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-24 07:13:47</sys_created_on>
+            <sys_id>27dd796c87bedd104bba40c6cebb35bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="도난/손실 신고서 관련" display_value="도난/손실 신고서 관련" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">eb3cf22a87a615104bba40c6cebb3574</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-24 07:13:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>place_of_theft</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-24 07:13:47</sys_created_on>
+            <sys_id>6fdd796c87bedd104bba40c6cebb35bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="도난/손실 신고서 관련" display_value="도난/손실 신고서 관련" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">eb3cf22a87a615104bba40c6cebb3574</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-24 07:13:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>the_case</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-24 07:13:47</sys_created_on>
+            <sys_id>63dd796c87bedd104bba40c6cebb35c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="도난/손실 신고서 관련" display_value="도난/손실 신고서 관련" name="x_tigar_office_a_0_office_automation" sys_domain="global" view="Default view">eb3cf22a87a615104bba40c6cebb3574</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-24 07:13:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>도난/손실 신고서 관련</caption>
+            <header>false</header>
+            <name>x_tigar_office_a_0_office_automation</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-18 06:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb3cf22a87a615104bba40c6cebb3574</sys_id>
+            <sys_name>x_tigar_office_a_0_office_automation</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_ui_section_eb3cf22a87a615104bba40c6cebb3574</sys_update_name>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

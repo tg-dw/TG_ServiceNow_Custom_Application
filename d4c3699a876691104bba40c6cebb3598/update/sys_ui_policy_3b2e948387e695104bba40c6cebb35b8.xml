@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_tigar_office_a_0_office_automation">rent_date_start&lt;javascript:gs.beginningOfToday()^EQ<item endquery="false" field="rent_date_start" goto="false" newquery="false" operator="&lt;" or="false" value="javascript:gs.beginningOfToday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	g_form.hideFieldMsg('rent_date_start');
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	if(g_form.getValue('state')==1){
+		g_form.showFieldMsg('rent_date_start','오늘 이후 날짜로 수정 필요','error');
+	}
+}]]></script_true>
+        <set_values/>
+        <short_description>OA Rent Start must be more than yesterday</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-19 08:26:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b2e948387e695104bba40c6cebb35b8</sys_id>
+        <sys_name>OA Rent Start must be more than yesterday</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_ui_policy_3b2e948387e695104bba40c6cebb35b8</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

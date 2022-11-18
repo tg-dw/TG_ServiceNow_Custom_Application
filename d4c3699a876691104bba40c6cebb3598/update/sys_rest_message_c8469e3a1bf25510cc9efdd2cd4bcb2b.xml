@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>한국환경공단_에어코리아_대기오염정보</description>
+        <name>airKorea</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>http://apis.data.go.kr/B552584/ArpltnInforInqireSvc</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-31 08:47:51</sys_created_on>
+        <sys_id>c8469e3a1bf25510cc9efdd2cd4bcb2b</sys_id>
+        <sys_name>airKorea</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_rest_message_c8469e3a1bf25510cc9efdd2cd4bcb2b</sys_update_name>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>시작 날짜는 오늘보다 미래이어야 한다.</description>
+        <field>rent_date_start</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OA rent start Field Verify</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   //Type appropriate comment here, and begin script below
+	var startDate = g_form.getValue("rent_date_start");
+	var today_date = new Date();
+	var today_date_time_str = formatDate(today_date, g_user_date_time_format);
+	
+	if(startDate <= today_date_time_str){
+		g_form.showFieldMsg("rent_date_start","값이 오늘보다 과거입니다.","error");
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-19 08:17:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>887c94cf87a695104bba40c6cebb3533</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>OA rent start Field Verify</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_887c94cf87a695104bba40c6cebb3533</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 08:23:41</sys_updated_on>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>ef2edf6fdb99ec1852cec59705961992</instance_id>
+        <instance_name>timegatecorpdemo2</instance_name>
+        <name>sys_script_client_887c94cf87a695104bba40c6cebb3533</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;시작 날짜는 오늘보다 미래이어야 한다.&lt;/description&gt;&lt;field&gt;rent_date_start&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;OA rent start Field Verify&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   //Type appropriate comment here, and begin script below
+	var startDate = g_form.getValue("rent_date_start");
+	var today_date = new Date();
+	var today_date_time_str = formatDate(today_date, g_user_date_time_format);
+	
+	if(startDate &lt;= today_date_time_str){
+		g_form.showFieldMsg("rent_date_start","값이 오늘보다 과거입니다.","error");
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-19 08:17:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;887c94cf87a695104bba40c6cebb3533&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;OA rent start Field Verify&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Office Automation" source="x_tigar_office_a_0"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Office Automation"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_887c94cf87a695104bba40c6cebb3533&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-19 08:23:41&lt;/sys_updated_on&gt;&lt;table&gt;x_tigar_office_a_0_office_automation&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-353695317</payload_hash>
+        <record_name>OA rent start Field Verify</record_name>
+        <reverted_from/>
+        <source>58c3699a876691104bba40c6cebb359a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-19 08:23:41</sys_created_on>
+        <sys_id>b2ed1c4387e695104bba40c6cebb353e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183ef57561a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 08:23:41</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7aed1c43bbe6951028a262f0357e173d</update_guid>
+        <update_guid_history>7aed1c43bbe6951028a262f0357e173d:-353695317,63ad98436ce69510ff977c94c0ab90aa:207948858,e68d94430ae69510f23bf26c5f1527e1:-353695317,ae4d9c039ee69510085fc6175548a6be:886427777,8efc5803d0e695101ba55fe604504d6b:1759203105,c87c94cfa8a695105d6068d1b9188c36:-1358689613</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-19 08:24:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>6d0775c9487c4a36a50bc9950549c724</sys_id>
+        <sys_metadata>887c94cf87a695104bba40c6cebb3533</sys_metadata>
+        <sys_name>OA rent start Field Verify</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent display_value="Office Automation">ef2425da876691104bba40c6cebb35f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_script_client_887c94cf87a695104bba40c6cebb3533</sys_update_name>
+        <sys_update_version display_value="sys_script_client_887c94cf87a695104bba40c6cebb3533">b2ed1c4387e695104bba40c6cebb353e</sys_update_version>
+    </sys_metadata_delete>
+</record_update>
