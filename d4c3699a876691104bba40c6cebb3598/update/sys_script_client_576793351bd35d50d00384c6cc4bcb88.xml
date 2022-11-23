@@ -8,7 +8,7 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>OAAR Set First UI</name>
+        <name>OAAR Set UI</name>
         <order/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
@@ -16,6 +16,20 @@
 	g_form.setLabelOf('state','상태');
 	g_form.setLabelOf('short_description','제목');
 	g_form.setLabelOf('description','내용');
+	
+	var currentState = g_form.getValue('state');
+	if(currentState <= '2'){ // 진행 된 이후이면,
+		g_form.setReadOnly('number',true);g_form.setReadOnly('state',true);
+		g_form.setReadOnly('req_department',true);g_form.setReadOnly('requestor',true);
+		g_form.setReadOnly('document_type',true);
+		g_form.setReadOnly('in_service_life',true);g_form.setReadOnly('security_level',true);
+		g_form.setReadOnly('request_date_time',true);g_form.setReadOnly('complete_date_time',true);
+		
+		g_form.setReadOnly('request_list',true);g_form.setReadOnly('request_cost',true);
+		g_form.setReadOnly('request_place',true);
+		g_form.setReadOnly('short_description',true);
+		g_form.setReadOnly('description',true);
+	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -23,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>576793351bd35d50d00384c6cc4bcb88</sys_id>
-        <sys_name>OAAR Set First UI</sys_name>
+        <sys_name>OAAR Set UI</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
         <sys_policy/>
