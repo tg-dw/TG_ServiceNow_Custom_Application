@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_tigar_office_a_0_office_automation_document</description>
+        <name>x_tigar_office_a_0_office_automation_document</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-21 02:25:08</sys_created_on>
+        <sys_id>420f9d63876e59104bba40c6cebb3504</sys_id>
+        <sys_name>x_tigar_office_a_0_office_automation_document</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_security_acl_420f9d63876e59104bba40c6cebb3504</sys_update_name>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_security_acl_420f9d63876e59104bba40c6cebb3504</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_tigar_office_a_0_office_automation_document</description>
+        <name>x_tigar_office_a_0_office_automation_document</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-21 02:25:08</sys_created_on>
+        <sys_id>420f9d63876e59104bba40c6cebb3504</sys_id>
+        <sys_name>x_tigar_office_a_0_office_automation_document</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_security_acl_420f9d63876e59104bba40c6cebb3504</sys_update_name>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>]]></payload>
+        <payload_hash>-1611933238</payload_hash>
+        <record_name>x_tigar_office_a_0_office_automation_document</record_name>
+        <reverted_from/>
+        <source>f2350728db9f511024c443ea139619b6</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-18 08:57:40</sys_created_on>
+        <sys_id>c5654768db9f511024c443ea139619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18489f53aa00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-18 08:57:40</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>05654768f49f51100b0105ad17ece5db</update_guid>
+        <update_guid_history>05654768f49f51100b0105ad17ece5db:0,1f3383e0739f51101cc77b9d487367c5:-1721333380,9151e9a41f175110f9fc1fc3c2a8ad0d:-1611933238</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-21 02:05:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>5439f39a6dc5476aba7485c2867360c1</sys_id>
+        <sys_metadata>420f9d63876e59104bba40c6cebb3504</sys_metadata>
+        <sys_name>x_tigar_office_a_0_office_automation_document</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent display_value="">53254fe4db9f511024c443ea13961994</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_420f9d63876e59104bba40c6cebb3504</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_420f9d63876e59104bba40c6cebb3504">c5654768db9f511024c443ea139619db</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

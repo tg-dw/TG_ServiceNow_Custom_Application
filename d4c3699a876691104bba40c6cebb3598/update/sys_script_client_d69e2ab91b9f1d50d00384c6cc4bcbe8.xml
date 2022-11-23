@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>새 기안품의서에서 문서 종류 필드 변경 시&#13;
+보존 연한, 보안 등급 필드 지정,&#13;
+UI 정책 구현</description>
+        <field>document_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OAAR Document Type Field Changed Policy</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	var documentType = g_form.getValue('document_type');
+	if(g_form.getValue('state') == '1'){
+		if(documentType == "경조금지급신청서" || documentType == "거래처경조금신청서" || documentType == "제증명발급신청서"){
+			g_form.setValue('in_service_life', '10년');
+			g_form.setValue('security_level', 's 등급');
+		}else if(documentType == "명함신청서" || documentType == "기안품의서"){
+			g_form.setValue('in_service_life', '5년');
+			g_form.setValue('security_level', 'a 등급');
+		}else if(documentType == "도서신청서" || documentType == "oa장비신청서" || documentType == "휴가신청서"){
+			g_form.setValue('in_service_life', '3년');
+			g_form.setValue('security_level', 'b 등급');
+		}else if(documentType == "출장신청서" || documentType == "휴일근무대장"){
+			g_form.setValue('in_service_life', '1년');
+			g_form.setValue('security_level', 'c 등급');	
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 04:30:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d69e2ab91b9f1d50d00384c6cc4bcbe8</sys_id>
+        <sys_name>OAAR Document Type Field Changed Policy</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_d69e2ab91b9f1d50d00384c6cc4bcbe8</sys_update_name>
+        <table>x_tigar_office_a_0_oa_approval_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

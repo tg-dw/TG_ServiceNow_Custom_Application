@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Office Automation Document">4a0f5d63876e59104bba40c6cebb35d9</application>
+        <filter/>
+        <name>Office Automation Documents</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_tigar_office_a_0.office_automation_document_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-21 02:25:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4a0f5d63876e59104bba40c6cebb35f5</sys_id>
+        <sys_name>Office Automation Documents</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_ui_module_4a0f5d63876e59104bba40c6cebb35f5</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation_document</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_ui_module_4a0f5d63876e59104bba40c6cebb35f5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Office Automation Document">4a0f5d63876e59104bba40c6cebb35d9</application>
+        <filter/>
+        <name>Office Automation Documents</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_tigar_office_a_0.office_automation_document_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-21 02:25:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4a0f5d63876e59104bba40c6cebb35f5</sys_id>
+        <sys_name>Office Automation Documents</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_ui_module_4a0f5d63876e59104bba40c6cebb35f5</sys_update_name>
+        <table>x_tigar_office_a_0_office_automation_document</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>]]></payload>
+        <payload_hash>555272748</payload_hash>
+        <record_name>Office Automation Documents</record_name>
+        <reverted_from/>
+        <source>f2350728db9f511024c443ea139619b6</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-18 08:57:43</sys_created_on>
+        <sys_id>3d65c768db9f511024c443ea1396192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18489f545a00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-18 08:57:43</sys_updated_on>
+        <type>Module</type>
+        <update_guid>7965c768e29f5110ba7569df8583322e</update_guid>
+        <update_guid_history>7965c768e29f5110ba7569df8583322e:0,ac43c3e0ab9f51102baf2a3905514b89:-799060761,0e512da425175110581e3ed8fb4a9a89:555272748</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-21 02:05:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>752bd1eb716747ef8f43ba41faaf0879</sys_id>
+        <sys_metadata>4a0f5d63876e59104bba40c6cebb35f5</sys_metadata>
+        <sys_name>Office Automation Documents</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_ui_module_4a0f5d63876e59104bba40c6cebb35f5</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_4a0f5d63876e59104bba40c6cebb35f5">3d65c768db9f511024c443ea1396192e</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

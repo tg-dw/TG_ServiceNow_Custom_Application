@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>새 신청서 로드 시&#13;
+소속, 사번, 전화번호 필드를 현재 로그인된 사용자의 정보로 채움&#13;
+GlideRecord : Scoped Application에서 사용할 수 없음 -&gt; Script Include &amp; GlideAjax 활용</description>
+        <field>requested_by</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OA New Form Set Requestor Field</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	if(g_form.getValue('state') == '1'){
+		g_form.setValue('requested_by',g_user.userID);
+		jslog("신청자 로드 업데이트");
+		var ga = new GlideAjax('x_tigar_office_a_0.OA_Lookup_User_Info');
+		var currentUserID = g_form.getValue('requested_by'); //sys_id를 반환
+		//jslog("LHH : " + currentUserID);
+		ga.addParam('sysparm_name', 'getUserInfo');
+		ga.addParam('userID', currentUserID);
+		ga.getXML(callback);
+	}
+}
+function callback(response){
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	//alert(answer);
+	
+	var stringArray = answer.split('/', 3);
+	g_form.setValue('req_department',stringArray[0]);
+	g_form.setValue('req_employee_number',stringArray[1]);
+	g_form.setValue('req_phone_number',stringArray[2]);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 04:32:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f11f2ab91b9f1d50d00384c6cc4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OA New Form Set Requestor Field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_f11f2ab91b9f1d50d00384c6cc4bcbf1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-22 04:32:37</sys_updated_on>
+        <table>x_tigar_office_a_0_office_automation</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_script_client_f11f2ab91b9f1d50d00384c6cc4bcbf1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;새 신청서 로드 시&amp;#13;
+소속, 사번, 전화번호 필드를 현재 로그인된 사용자의 정보로 채움&amp;#13;
+GlideRecord : Scoped Application에서 사용할 수 없음 -&amp;gt; Script Include &amp;amp; GlideAjax 활용&lt;/description&gt;&lt;field&gt;requested_by&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;OA New Form Set Requestor Field&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	if(g_form.getValue('state') == '1'){
+		g_form.setValue('requested_by',g_user.userID);
+		jslog("신청자 로드 업데이트");
+		var ga = new GlideAjax('x_tigar_office_a_0.OA_Lookup_User_Info');
+		var currentUserID = g_form.getValue('requested_by'); //sys_id를 반환
+		//jslog("LHH : " + currentUserID);
+		ga.addParam('sysparm_name', 'getUserInfo');
+		ga.addParam('userID', currentUserID);
+		ga.getXML(callback);
+	}
+}
+function callback(response){
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	//alert(answer);
+	
+	var stringArray = answer.split('/', 3);
+	g_form.setValue('req_department',stringArray[0]);
+	g_form.setValue('req_employee_number',stringArray[1]);
+	g_form.setValue('req_phone_number',stringArray[2]);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-22 04:32:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f11f2ab91b9f1d50d00384c6cc4bcbf1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;OA New Form Set Requestor Field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Office Automation" source="x_tigar_office_a_0"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Office Automation"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f11f2ab91b9f1d50d00384c6cc4bcbf1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-22 04:32:37&lt;/sys_updated_on&gt;&lt;table&gt;x_tigar_office_a_0_office_automation&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2066060646</payload_hash>
+        <record_name>OA New Form Set Requestor Field</record_name>
+        <reverted_from/>
+        <source>07950fa4db9f511024c443ea139619ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 04:32:37</sys_created_on>
+        <sys_id>b91f2ab91b9f1d50d00384c6cc4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1849d9c021b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-22 04:32:37</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>b11f2ab9929f1d50aa8b0a559aafadf3</update_guid>
+        <update_guid_history>b11f2ab9929f1d50aa8b0a559aafadf3:2066060646</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 04:33:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0192cca9e22a4678b4e9bdef6079cd90</sys_id>
+        <sys_metadata>f11f2ab91b9f1d50d00384c6cc4bcbf1</sys_metadata>
+        <sys_name>OA New Form Set Requestor Field</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent display_value="Office Automation">ef2425da876691104bba40c6cebb35f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_script_client_f11f2ab91b9f1d50d00384c6cc4bcbf1</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f11f2ab91b9f1d50d00384c6cc4bcbf1">b91f2ab91b9f1d50d00384c6cc4bcbf3</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

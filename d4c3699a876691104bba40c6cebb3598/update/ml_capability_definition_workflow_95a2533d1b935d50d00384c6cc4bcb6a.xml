@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_workflow">
+    <ml_capability_definition_workflow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="Workflow">d12a03f173212010c0bbb63854f6a7b9</capability>
+        <current_solution_version/>
+        <dataset_language>en</dataset_language>
+        <description>DocIntel PDF preprocessing workflow</description>
+        <fields/>
+        <filter/>
+        <request_source>api</request_source>
+        <solution_label>docintel_pdf_preprocessing_workflow_b7625ff91b935d50d00384c6cc4bcbea</solution_label>
+        <solution_name>ml_x_tigar_x_tigar_office_a_0_global_docintel_pdf_preprocessing_workflow_b7625ff91b935d50d00384c6cc4bcbea</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"description":"DocIntel PDF preprocessing workflow","label":"docintel_pdf_preprocessing_workflow_b7625ff91b935d50d00384c6cc4bcbea","predictPipeline":{},"schedulingInfo":{"useCase":"docintel_pdf2img_workflow","overrideCapability":{"name":"docintel_trainer","version":"22.1"}},"tags":"docintel,pdf,workflow","trainingPipeline":{"pipelineName":"docintel_multipage_preprocessing_v22","pipelineInput":{"config":{"pdf_component_version":"1.0","max_pages":25.0,"save_format":"JPEG","quality":95.0},"datasets":{"pdf_input":{"tableName":"di_pdf_input","fieldNames":["pdf","data","chunk_number","task_definition","task"],"encodedQuery":"state\u003dassigned^task_definition\u003db7625ff91b935d50d00384c6cc4bcbea","name":"pdf_input"}}}},"workflowConfiguration":{"trainingFrequency":"run_once"},"workflowLanguageVersion":"1.0.0"}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 07:07:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>95a2533d1b935d50d00384c6cc4bcb6a</sys_id>
+        <sys_name>DocIntel PDF preprocessing workflow</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>ml_capability_definition_workflow_95a2533d1b935d50d00384c6cc4bcb6a</sys_update_name>
+        <table/>
+        <tags>docintel,pdf,workflow</tags>
+        <training_frequency>run_once</training_frequency>
+        <word_vector_corpus/>
+    </ml_capability_definition_workflow>
+</record_update>

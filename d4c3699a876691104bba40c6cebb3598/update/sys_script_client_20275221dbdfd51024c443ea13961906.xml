@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Form에서 기안자의 직급에 따라&#13;
+결재선 UI 설정, 사용자 정보 기입</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OAAR Set Approval Line By Employee Level</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+
+	//결재라인 초기화
+	g_form.setDisplay('line_user_pro', false);
+	g_form.setDisplay('line_pro', false);
+	g_form.setDisplay('line_user_team_leader', false);
+	g_form.setDisplay('line_team_leader', false);
+	g_form.setDisplay('line_user_director', false);
+	g_form.setDisplay('line_director', false);
+	g_form.setDisplay('line_user_vice_president', false);
+	g_form.setDisplay('line_vice_president', false);
+	g_form.setDisplay('line_user_president', false);
+	g_form.setDisplay('line_president', false);
+
+	
+	jslog("결재선 설정");
+	var ga = new GlideAjax('x_tigar_office_a_0.OA_Lookup_User_Info');
+	var currentUserID = g_form.getValue('requestor'); //sys_id를 반환
+	//jslog("LHH : " + currentUserID);
+	ga.addParam('sysparm_name', 'getUserEmployeeLevel');
+	ga.addParam('userID', currentUserID);
+	ga.getXML(callback);
+	
+	var ga2 = new GlideAjax('x_tigar_office_a_0.OA_Lookup_User_Info');
+	//jslog("LHH : " + currentUserID);
+	ga2.addParam('sysparm_name', 'getUsersHeadInfo');
+	ga2.addParam('userID', currentUserID);
+	ga2.getXML(callback2);
+
+}
+function callback(response){
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	//alert(answer);
+
+	if(answer == '프로'){
+		//결재라인 초기화
+		g_form.setDisplay('line_user_pro', true);
+		g_form.setDisplay('line_pro', true);
+		g_form.setDisplay('line_user_team_leader', true);
+		g_form.setDisplay('line_team_leader', true);
+		g_form.setDisplay('line_user_director', true);
+		g_form.setDisplay('line_director', true);
+		g_form.setDisplay('line_user_vice_president', true);
+		g_form.setDisplay('line_vice_president', true);
+		g_form.setDisplay('line_user_president', true);
+		g_form.setDisplay('line_president', true);
+	}else if(answer == '팀장' || answer == '이사'){
+		//결재라인 초기화
+		g_form.setDisplay('line_user_team_leader', true);
+		g_form.setDisplay('line_team_leader', true);
+		g_form.setDisplay('line_user_director', true);
+		g_form.setDisplay('line_director', true);
+		g_form.setDisplay('line_user_vice_president', true);
+		g_form.setDisplay('line_vice_president', true);
+		g_form.setDisplay('line_user_president', true);
+		g_form.setDisplay('line_president', true);
+	}else if(answer == '본부장' || answer == '상무이사' || answer == '부사장' || answer == '사장'){
+		//결재라인 초기화
+		g_form.setDisplay('line_user_director', true);
+		g_form.setDisplay('line_director', true);
+		g_form.setDisplay('line_user_vice_president', true);
+		g_form.setDisplay('line_vice_president', true);
+		g_form.setDisplay('line_user_president', true);
+		g_form.setDisplay('line_president', true);
+	}
+}
+function callback2(response){
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	//alert(answer);
+	var currentUserID = g_form.getValue('requestor'); //sys_id를 반환
+	var stringArray = answer.split('/');
+	if(stringArray[0] == '프로'){
+		g_form.setValue('line_user_pro', currentUserID);
+		g_form.setValue('line_user_team_leader', stringArray[1]);
+		g_form.setValue('line_user_director', stringArray[2]);
+		g_form.setValue('line_user_vice_president', stringArray[3]);
+		g_form.setValue('line_user_president', stringArray[4]);
+	}else if(stringArray[0] == '팀장'){
+		g_form.setValue('line_user_team_leader', currentUserID);
+		g_form.setValue('line_user_director', stringArray[1]);
+		g_form.setValue('line_user_vice_president', stringArray[2]);
+		g_form.setValue('line_user_president', stringArray[3]);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-21 08:14:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>20275221dbdfd51024c443ea13961906</sys_id>
+        <sys_name>OAAR Set Approval Line By Employee Level</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_20275221dbdfd51024c443ea13961906</sys_update_name>
+        <table>x_tigar_office_a_0_oa_approval_request</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

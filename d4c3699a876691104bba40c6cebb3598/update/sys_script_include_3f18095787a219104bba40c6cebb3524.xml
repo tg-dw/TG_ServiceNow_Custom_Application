@@ -25,6 +25,46 @@ OA_Lookup_User_Info.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		}
 		return returnValue;
 	},
+	
+	getUserEmployeeLevel:function(){
+		var returnValue=""; // 직급
+		var userID = this.getParameter('userID');
+		gs.info('getUserEmployeeLevel 사용');
+		var userGr = new GlideRecord('sys_user');
+		userGr.addQuery('sys_id',userID);
+		userGr.query();
+
+		if(userGr.next()){
+			returnValue += userGr.u_employee_level; //레퍼런스 필드는 sys_id를 가져와야 클라이언트 측에서 입력이 원할
+		}
+		return returnValue;
+	},
+	
+	getUsersHeadInfo:function(){
+		var returnValue=""; // 팀장/본부장/사장/부사장
+		var userID = this.getParameter('userID');
+		gs.info('스크립트 인클루드 사용');
+		var userGr = new GlideRecord('sys_user');
+		userGr.addQuery('sys_id',userID);
+		userGr.query();
+		
+		if(userGr.next()){
+			if(userGr.u_employee_level == "프로"){
+				returnValue += "프로/"; //프로 플래그
+				returnValue += userGr.department.dept_head + "/"; //팀장
+				returnValue += userGr.department.parent.dept_head + "/";//본부장
+				returnValue += userGr.company.u_vice_president+ "/";//부사장
+				returnValue += userGr.company.u_president+ "/";//사장
+			}else{
+				returnValue += "팀장/"; //팀장 플래그
+				returnValue += userGr.department.parent.dept_head + "/";//본부장
+				returnValue += userGr.company.u_vice_president+ "/";//부사장
+				returnValue += userGr.company.u_president+ "/";//사장
+			}	
+		}
+		return returnValue;
+	},
+	
 	type: 'OA_Lookup_User_Info'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>

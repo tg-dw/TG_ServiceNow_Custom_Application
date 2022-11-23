@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="line_user_director" label="사업본부장/상무이사" language="en" table="x_tigar_office_a_0_oa_approval_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>line_user_director</element>
+            <help/>
+            <hint/>
+            <label>사업본부장/상무이사</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <plural>사업본부장/상무이사s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 07:23:23</sys_created_on>
+            <sys_name>사업본부장/상무이사</sys_name>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_documentation_x_tigar_office_a_0_oa_approval_request_line_user_director_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="936409e5db97d51024c443ea1396198d" extends="task" label="OA Approval Request" max_length="40" name="x_tigar_office_a_0_oa_approval_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="완료 일시" max_length="40" name="complete_date_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="선택" label="문서 종류" max_length="40" name="document_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="선택" sequence="0" value="선택"/>
+                <element inactive_on_update="false" label="경조금지급신청서" sequence="1" value="경조금지급신청서"/>
+                <element inactive_on_update="false" label="거래처경조금신청서" sequence="2" value="거래처경조금신청서"/>
+                <element inactive_on_update="false" label="제증명발급신청서" sequence="3" value="제증명발급신청서"/>
+                <element inactive_on_update="false" label="명함신청서" sequence="4" value="명함신청서"/>
+                <element inactive_on_update="false" label="기안품의서" sequence="5" value="기안품의서"/>
+                <element inactive_on_update="false" label="OA장비신청서" sequence="6" value="oa장비신청서"/>
+                <element inactive_on_update="false" label="도서신청서" sequence="7" value="도서신청서"/>
+                <element inactive_on_update="false" label="휴가신청서" sequence="8" value="휴가신청서"/>
+                <element inactive_on_update="false" label="휴일근무대장" sequence="9" value="휴일근무대장"/>
+                <element inactive_on_update="false" label="출장신청서" sequence="10" value="출장신청서"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="선택" label="보존 연한" max_length="40" name="in_service_life" type="string">
+            <choice>
+                <element inactive_on_update="false" label="선택" sequence="0" value="선택"/>
+                <element inactive_on_update="false" label="1년" sequence="1" value="1년"/>
+                <element inactive_on_update="false" label="3년" sequence="2" value="3년"/>
+                <element inactive_on_update="false" label="5년" sequence="3" value="5년"/>
+                <element inactive_on_update="false" label="10년" sequence="4" value="10년"/>
+                <element inactive_on_update="false" label="영구" sequence="5" value="영구"/>
+            </choice>
+        </element>
+        <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_director" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
+                <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
+            </choice>
+        </element>
+        <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_president" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
+                <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
+            </choice>
+        </element>
+        <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_pro" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
+                <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
+            </choice>
+        </element>
+        <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_team_leader" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
+                <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="사업본부장/상무이사" max_length="32" name="line_user_director" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="사장" max_length="32" name="line_user_president" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="프로" max_length="32" name="line_user_pro" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="팀장/이사" max_length="32" name="line_user_team_leader" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="사업본부장/부사장" max_length="32" name="line_user_vice_president" read_only="true" reference="sys_user" type="reference"/>
+        <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_vice_president" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
+                <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
+            </choice>
+        </element>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="기안자" max_length="32" name="requestor" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="omit_sys_original=true" label="비용" max_length="20" name="request_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="기안 일시" max_length="40" name="request_date_time" type="glide_date_time"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="대상" max_length="1024" name="request_list" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="장소" max_length="40" name="request_place" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="제목" max_length="40" name="request_title" type="string"/>
+        <element attributes="encode_utf8=false" label="기안 부서" max_length="32" name="req_department" reference="cmn_department" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="선택" label="보안 등급" max_length="40" name="security_level" type="string">
+            <choice>
+                <element inactive_on_update="false" label="선택" sequence="0" value="선택"/>
+                <element inactive_on_update="false" label="S 등급" sequence="1" value="s 등급"/>
+                <element inactive_on_update="false" label="A 등급" sequence="2" value="a 등급"/>
+                <element inactive_on_update="false" label="B 등급" sequence="3" value="b 등급"/>
+                <element inactive_on_update="false" label="C 등급" sequence="4" value="c 등급"/>
+            </choice>
+        </element>
+    </element>
+</database>

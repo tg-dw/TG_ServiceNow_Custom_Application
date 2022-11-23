@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="security_level" table="x_tigar_office_a_0_oa_approval_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>security_level</element>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 06:04:49</sys_created_on>
+            <sys_name>security_level</sys_name>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_choice_x_tigar_office_a_0_oa_approval_request_security_level</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>security_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>선택</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 06:04:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>선택</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>security_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>S 등급</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 06:04:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>s 등급</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>security_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>A 등급</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 06:04:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>a 등급</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>security_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>B 등급</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 06:04:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>b 등급</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>security_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>C 등급</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 06:04:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>c 등급</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

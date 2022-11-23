@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="c5de1963876e59104bba40c6cebb3536" extends="task" label="Office Automation Document" max_length="40" name="x_tigar_office_a_0_office_automation_document" type="collection">
-        <element label="Key" max_length="40" name="key" type="string"/>
-    </element>
-</database>

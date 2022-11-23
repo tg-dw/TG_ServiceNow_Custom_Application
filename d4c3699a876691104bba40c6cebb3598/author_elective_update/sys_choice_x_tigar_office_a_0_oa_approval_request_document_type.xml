@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="document_type" table="x_tigar_office_a_0_oa_approval_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>document_type</element>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_name>document_type</sys_name>
+            <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+            <sys_update_name>sys_choice_x_tigar_office_a_0_oa_approval_request_document_type</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>선택</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>선택</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>경조금지급신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>경조금지급신청서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>거래처경조금신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>거래처경조금신청서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>제증명발급신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>제증명발급신청서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>명함신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>명함신청서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>기안품의서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>기안품의서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OA장비신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>oa장비신청서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>도서신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>도서신청서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>휴가신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 04:53:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>휴가신청서</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>휴일근무대장</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>휴일근무대장</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>document_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>출장신청서</label>
+            <language>en</language>
+            <name>x_tigar_office_a_0_oa_approval_request</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 02:30:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>출장신청서</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

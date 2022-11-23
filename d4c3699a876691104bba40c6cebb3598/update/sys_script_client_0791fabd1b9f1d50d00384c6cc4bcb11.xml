@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>새 기안품의서에서 기안자 필드 변경 시&#13;
+부서 필드를 현재 기안자 필드 정보로 채움&#13;
+GlideRecord : Scoped Application에서 사용할 수 없음 -&gt; Script Include &amp; GlideAjax 활용</description>
+        <field>requestor</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OAAR Set Department Change Type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	if(g_form.getValue('state') == '1'){
+		g_form.setValue('requested_by',g_user.userID);
+		jslog("신청자 로드 업데이트");
+		var ga = new GlideAjax('x_tigar_office_a_0.OA_Lookup_User_Info');
+		var currentUserID = g_form.getValue('requestor'); //sys_id를 반환
+		//jslog("LHH : " + currentUserID);
+		ga.addParam('sysparm_name', 'getUserInfo');
+		ga.addParam('userID', currentUserID);
+		ga.getXML(callback);
+	}
+}
+function callback(response){
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	//alert(answer);
+	var stringArray = answer.split('/', 3);
+	g_form.setValue('req_department',stringArray[0]);
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 04:43:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0791fabd1b9f1d50d00384c6cc4bcb11</sys_id>
+        <sys_name>OAAR Set Department Change Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_client_0791fabd1b9f1d50d00384c6cc4bcb11</sys_update_name>
+        <table>x_tigar_office_a_0_oa_approval_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
