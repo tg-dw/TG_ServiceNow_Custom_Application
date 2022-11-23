@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>본부장 결재</action_name>
+        <action_name>부사장 결재</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == 2 &amp;&amp; gs.hasRole("oaar_approver_director") &amp;&amp; gs.getUserID()==current.requestor.department.parent.dept_head &amp;&amp; current.line_director == "대기"</condition>
+        <condition>current.state == 2 &amp;&amp; gs.hasRole("oaar_approver_vice_president") &amp;&amp; gs.getUserID()==current.requestor.company. u_vice_president &amp;&amp; current.line_vice_president == "대기"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -29,14 +29,14 @@
         <messages/>
         <name>결재</name>
         <onclick/>
-        <order>300</order>
-        <script><![CDATA[//본부장 결재 승인
+        <order>400</order>
+        <script><![CDATA[//부사장 결재 승인
 //    조건1. 현재 상태가 진행
-//    조건2. 현재 로그인한 사용자가 본부장 승인 권한을 가짐
-//    조건3. 현재 로그인한 사용자가 기안자의 상위 부서의 리더임
-//    조건4. 현재 본부장 결재 상태가 대기
-//    액션. 본부장 승인 처리 > 업데이트 > 현재 Form으로 이동
-current.line_director = "승인";
+//    조건2. 현재 로그인한 사용자가 부사장 승인 권한을 가짐
+//    조건3. 현재 로그인한 사용자가 기안자의 회사의 부사장임
+//    조건4. 현재 부사장 결재 상태가 대기
+//    액션. 부사장 승인 처리 > 업데이트 > 현재 Form으로 이동
+current.line_vice_president = "승인";
 current.update();
 action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>
@@ -44,17 +44,17 @@ action.setRedirectURL(current);]]></script>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-21 08:05:33</sys_created_on>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-23 06:42:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7ad456e9db9fd51024c443ea139619f9</sys_id>
+        <sys_id>9e669c9edbdfd91024c443ea13961997</sys_id>
         <sys_name>결재</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
         <sys_policy/>
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
-        <sys_update_name>sys_ui_action_7ad456e9db9fd51024c443ea139619f9</sys_update_name>
+        <sys_update_name>sys_ui_action_9e669c9edbdfd91024c443ea13961997</sys_update_name>
         <table>x_tigar_office_a_0_oa_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

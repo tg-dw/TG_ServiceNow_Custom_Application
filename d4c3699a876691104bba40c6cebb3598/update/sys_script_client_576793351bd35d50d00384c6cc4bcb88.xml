@@ -18,7 +18,7 @@
 	g_form.setLabelOf('description','내용');
 	
 	var currentState = g_form.getValue('state');
-	if(currentState <= '2'){ // 진행 된 이후이면,
+	if(currentState >= '2'){ // 진행 된 이후이면,
 		g_form.setReadOnly('number',true);g_form.setReadOnly('state',true);
 		g_form.setReadOnly('req_department',true);g_form.setReadOnly('requestor',true);
 		g_form.setReadOnly('document_type',true);
