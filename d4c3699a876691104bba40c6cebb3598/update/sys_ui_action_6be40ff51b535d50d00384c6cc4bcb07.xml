@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == 2 &amp;&amp; gs.hasRole("oaar_approver_team_leader") &amp;&amp; gs.getUserID()==current.requestor.department.dept_head &amp;&amp; current.line_team_leader == "대기"</condition>
+        <condition>current.state == 2 &amp;&amp; gs.hasRole("x_tigar_office_a_0.oaar_approver_team_leader") &amp;&amp; gs.getUserID() == current.req_department.dept_head &amp;&amp; current.line_team_leader == "대기"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -30,7 +30,7 @@
         <name>결재</name>
         <onclick/>
         <order>200</order>
-        <script><![CDATA[//팀장 결재 승인
+        <script><![CDATA[//current.state == 2 && gs.hasRole("x_tigar_office_a_0.oaar_approver_team_leader") && gs.getUserID() == current.req_department.dept_head && current.line_team_leader == "대기"//팀장 결재 승인
 //    조건 1. 현재 상태가 진행
 //    조건 2. 현재 로그인한 사용자가 팀장 승인 권한을 가짐
 //    조건 3. 현재 로그인한 사용자가 기안자의 팀장임

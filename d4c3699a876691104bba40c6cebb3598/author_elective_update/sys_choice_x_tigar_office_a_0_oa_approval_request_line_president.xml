@@ -17,16 +17,16 @@
             <element>line_president</element>
             <hint/>
             <inactive>false</inactive>
-            <label>결재 대기</label>
+            <label>대기</label>
             <language>en</language>
             <name>x_tigar_office_a_0_oa_approval_request</name>
             <sequence>0</sequence>
             <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 06:04:11</sys_created_on>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-11-23 09:07:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <value>결재 대기</value>
+            <value>대기</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

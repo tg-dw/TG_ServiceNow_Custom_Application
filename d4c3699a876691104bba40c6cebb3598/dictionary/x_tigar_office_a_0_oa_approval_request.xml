@@ -28,28 +28,28 @@
         </element>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_director" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
                 <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_president" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
                 <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_pro" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
                 <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_team_leader" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
                 <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
@@ -61,7 +61,8 @@
         <element attributes="encode_utf8=false" label="사업본부장/부사장" max_length="32" name="line_user_vice_president" read_only="true" reference="sys_user" type="reference"/>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_vice_president" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive="true" inactive_on_update="true" label="결재 대기" sequence="0" value="결재 대기"/>
+                <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
                 <element inactive_on_update="false" label="승인" sequence="1" value="승인"/>
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>

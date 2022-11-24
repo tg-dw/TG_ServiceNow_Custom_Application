@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>진행</action_name>
+        <action_name>테스트</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == 1 &amp;&amp; gs.hasRole("x_tigar_office_a_0.oa_approval_request_user") &amp;&amp; gs.getUserID()==current.requestor</condition>
+        <condition/>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,24 +27,13 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>진행</name>
+        <name>모두 승인 테스트용</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.state = 2;
-var employeeLevel = current.requestor.u_employee_level;
-
-if(employeeLevel == '프로'){
-	current.line_pro = "승인";
-}else if(employeeLevel == '팀장' || employeeLevel == '이사'){
-	current.line_team_leader = "승인";
-}else if(employeeLevel == '본부장' || employeeLevel == '상무이사'){
-	current.line_director = "승인"; 
-}else if(employeeLevel == '부사장'){
-	current.line_vice_president = "승인"; 
-}else if(employeeLevel == '사장'){
-	current.line_president = "승인"; 
-}
-current.request_date_time = new GlideDateTime();
+        <script><![CDATA[current.line_team_leader = "승인";
+current.line_director = "승인"; 
+current.line_vice_president = "승인"; 
+current.line_president = "승인"; 
 current.update();
 action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>
@@ -52,17 +41,17 @@ action.setRedirectURL(current);]]></script>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-22 05:09:31</sys_created_on>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-24 07:48:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>828772391bdf1d50d00384c6cc4bcb66</sys_id>
-        <sys_name>진행</sys_name>
+        <sys_id>191fa522dbd39d1024c443ea1396197d</sys_id>
+        <sys_name>모두 승인 테스트용</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
         <sys_policy/>
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
-        <sys_update_name>sys_ui_action_828772391bdf1d50d00384c6cc4bcb66</sys_update_name>
+        <sys_update_name>sys_ui_action_191fa522dbd39d1024c443ea1396197d</sys_update_name>
         <table>x_tigar_office_a_0_oa_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

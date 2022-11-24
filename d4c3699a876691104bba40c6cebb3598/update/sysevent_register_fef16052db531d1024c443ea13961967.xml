@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>OAAR 레코드 완료 상태로 업데이트 및 완료 일시 기입 후 메일링을 위해 이벤트 발생</description>
+        <event_name>x_tigar_office_a_0.oaar_when_record_comp</event_name>
+        <fired_by>Business Rules: OAAR Set Complete Date Time</fired_by>
+        <queue/>
+        <suffix>oaar_when_record_completed</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-23 07:33:05</sys_created_on>
+        <sys_id>fef16052db531d1024c443ea13961967</sys_id>
+        <sys_name>x_tigar_office_a_0.oaar_when_record_comp</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sysevent_register_fef16052db531d1024c443ea13961967</sys_update_name>
+        <table>x_tigar_office_a_0_oa_approval_request</table>
+    </sysevent_register>
+</record_update>

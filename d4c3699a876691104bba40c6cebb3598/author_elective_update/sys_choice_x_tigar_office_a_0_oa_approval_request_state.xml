@@ -32,22 +32,6 @@
             <dependent_value/>
             <element>state</element>
             <hint/>
-            <inactive>true</inactive>
-            <label>마감</label>
-            <language>en</language>
-            <name>x_tigar_office_a_0_oa_approval_request</name>
-            <sequence>0</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-21 06:04:49</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <value>4</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
             <inactive>false</inactive>
             <label>진행</label>
             <language>en</language>
@@ -90,7 +74,7 @@
             <sys_created_on>2022-11-21 06:04:49</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <value>5</value>
+            <value>4</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == 2 &amp;&amp; gs.hasRole("oaar_approver_vice_president") &amp;&amp; gs.getUserID()==current.requestor.company. u_vice_president &amp;&amp; current.line_vice_president == "대기"</condition>
+        <condition>current.state == 2 &amp;&amp; gs.hasRole("x_tigar_office_a_0.oaar_approver_vice_president") &amp;&amp; gs.getUserID()==current.requestor.company. u_vice_president &amp;&amp; current.line_vice_president == "대기"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>

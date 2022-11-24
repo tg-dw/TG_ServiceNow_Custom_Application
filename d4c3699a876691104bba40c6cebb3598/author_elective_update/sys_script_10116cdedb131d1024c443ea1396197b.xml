@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_tigar_office_a_0_oa_approval_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_tigar_office_a_0_oa_approval_request">state=3^EQ<item display_value="결재완료" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>OAAR Set Complete Date Time</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var CompleteDateTime = new GlideDateTime();
+	current.complete_date_time = CompleteDateTime;
+	//기안자에게 아웃바운드 이메일 발생
+	gs.eventQueue('x_tigar_office_a_0.oaar_when_record_comp', current, current.getValue('requestor'));
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-23 07:29:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10116cdedb131d1024c443ea1396197b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>OAAR Set Complete Date Time</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_script_10116cdedb131d1024c443ea1396197b</sys_update_name>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-24 07:37:41</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=10116cdedb131d1024c443ea1396197b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_script_10116cdedb131d1024c443ea1396197b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_tigar_office_a_0_oa_approval_request&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_tigar_office_a_0_oa_approval_request"&gt;state=3^EQ&lt;item display_value="결재완료" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;OAAR Set Complete Date Time&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var CompleteDateTime = new GlideDateTime();
+	current.complete_date_time = CompleteDateTime;
+	//기안자에게 아웃바운드 이메일 발생
+	gs.eventQueue('x_tigar_office_a_0.oaar_when_record_comp', current, current.getValue('requestor'));
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leehohyeong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-23 07:29:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;10116cdedb131d1024c443ea1396197b&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;OAAR Set Complete Date Time&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Office Automation" source="x_tigar_office_a_0"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Office Automation"&gt;d4c3699a876691104bba40c6cebb3598&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_10116cdedb131d1024c443ea1396197b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;leehohyeong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-24 07:37:41&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=10116cdedb131d1024c443ea1396197b"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-952607401</payload_hash>
+        <record_name>OAAR Set Complete Date Time</record_name>
+        <reverted_from/>
+        <source>58510c9adb5fd91024c443ea139619f7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-24 07:37:42</sys_created_on>
+        <sys_id>c0aca52edb939d1024c443ea1396190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184a8922a0a0000001</sys_recorded_at>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-24 07:37:42</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>84aca52e5e939d105cb736f9b4ce980b</update_guid>
+        <update_guid_history>84aca52e5e939d105cb736f9b4ce980b:-952607401,b20fd9263f539d10f51778e4ca94cd38:-127700962,7cbdd5a208539d10343921f1d1ea67c1:830119677,e4abd1eee8139d10b3c10cd1a36d5be0:-1874898607,333a516e87139d107dbb5b09d4c45cc5:-853944758,baf4e096fb531d1084948ea4c8efe92a:135098112,eb512812bc531d10d0296ba569e1deff:-364626901,90116cdea5131d10c9112186be3ea47d:-890071657</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-24 07:49:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>122c9856262d4d65ac63373af0c8acb1</sys_id>
+        <sys_metadata>10116cdedb131d1024c443ea1396197b</sys_metadata>
+        <sys_name>OAAR Set Complete Date Time</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent display_value="OA Approval Request">936409e5db97d51024c443ea1396198d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_script_10116cdedb131d1024c443ea1396197b</sys_update_name>
+        <sys_update_version display_value="sys_script_10116cdedb131d1024c443ea1396197b">c0aca52edb939d1024c443ea1396190c</sys_update_version>
+    </sys_metadata_delete>
+</record_update>
