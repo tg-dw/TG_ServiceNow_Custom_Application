@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="OA 장비">4cfa3d66872215104bba40c6cebb3541</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint>현재 로그인한 사용자의 진행 중인 OA장비 신청서 리스트</hint>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>My OA L</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_tigar_office_a_0_office_automation</name>
+        <order>700</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>&amp;sysparm_fixed_query=active=true^requested_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=4</query>
+        <report/>
+        <roles>x_tigar_office_a_0.oa_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 05:19:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1c63b5bfdbd3955024c443ea13961934</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>진행</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_app_module_1c63b5bfdbd3955024c443ea13961934</sys_update_name>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 05:23:39</sys_updated_on>
+        <timeline_page/>
+        <title>진행</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_app_module_1c63b5bfdbd3955024c443ea13961934</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="OA 장비">4cfa3d66872215104bba40c6cebb3541</application><assessment/><device_type/><filter/><hint>현재 로그인한 사용자의 진행 중인 OA장비 신청서 리스트</hint><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>My OA L</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_tigar_office_a_0_office_automation</name><order>700</order><override_menu_roles>false</override_menu_roles><query>&amp;sysparm_fixed_query=active=true^requested_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=4</query><report/><roles>x_tigar_office_a_0.oa_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>leehohyeong</sys_created_by><sys_created_on>2022-11-28 05:19:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1c63b5bfdbd3955024c443ea13961934</sys_id><sys_mod_count>2</sys_mod_count><sys_name>진행</sys_name><sys_overrides/><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sys_app_module_1c63b5bfdbd3955024c443ea13961934</sys_update_name><sys_updated_by>leehohyeong</sys_updated_by><sys_updated_on>2022-11-28 05:23:39</sys_updated_on><timeline_page/><title>진행</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-939327016</payload_hash>
+        <record_name>진행</record_name>
+        <reverted_from/>
+        <source>c59452f7dbd7955024c443ea139619ae</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 05:23:39</sys_created_on>
+        <sys_id>6f447133db17955024c443ea139619cd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_recorded_at>184bcb0e3210000001</sys_recorded_at>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 07:44:41</sys_updated_on>
+        <type>Module</type>
+        <update_guid>e34471339f179550ed299c0e2b54bbcd</update_guid>
+        <update_guid_history>e34471339f179550ed299c0e2b54bbcd:-939327016,48343133b717955029562f8a8899556d:1450964950,9463b5bff2d3955078e6356b57083f36:498627285</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="진행">85eebd73db57955024c443ea139619d2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 06:09:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>018dac4ca9714d8e80256a578cd71fe1</sys_id>
+        <sys_metadata>1c63b5bfdbd3955024c443ea13961934</sys_metadata>
+        <sys_name>진행</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_app_module_1c63b5bfdbd3955024c443ea13961934</sys_update_name>
+        <sys_update_version display_value="sys_app_module_1c63b5bfdbd3955024c443ea13961934">6f447133db17955024c443ea139619cd</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

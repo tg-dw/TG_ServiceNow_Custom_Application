@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="DELETE">
+        <group/>
+        <hidden>false</hidden>
+        <name>승인</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 05:34:26</sys_created_on>
+        <sys_id>29c63137db17955024c443ea139619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>승인</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_ui_view_29c63137db17955024c443ea139619af</sys_update_name>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 05:34:26</sys_updated_on>
+        <title>승인</title>
+        <user/>
+    </sys_ui_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_ui_view_29c63137db17955024c443ea139619af</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view"><sys_ui_view action="INSERT_OR_UPDATE"><group/><hidden>false</hidden><name>승인</name><roles/><sys_class_name>sys_ui_view</sys_class_name><sys_created_by>leehohyeong</sys_created_by><sys_created_on>2022-11-28 05:34:26</sys_created_on><sys_id>29c63137db17955024c443ea139619af</sys_id><sys_mod_count>0</sys_mod_count><sys_name>승인</sys_name><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sys_ui_view_29c63137db17955024c443ea139619af</sys_update_name><sys_updated_by>leehohyeong</sys_updated_by><sys_updated_on>2022-11-28 05:34:26</sys_updated_on><title>승인</title><user/></sys_ui_view></record_update>]]></payload>
+        <payload_hash>650378497</payload_hash>
+        <record_name>승인</record_name>
+        <reverted_from/>
+        <source>58510c9adb5fd91024c443ea139619f7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 05:34:26</sys_created_on>
+        <sys_id>21c67537db17955024c443ea1396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184bcbac2350000001</sys_recorded_at>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 05:34:26</sys_updated_on>
+        <type>UI View</type>
+        <update_guid>e5c6753731179550c45826a11184262a</update_guid>
+        <update_guid_history>e5c6753731179550c45826a11184262a:650378497</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 06:23:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_view">sys_ui_view</sys_db_object>
+        <sys_id>52e5379a808d4469b09c6e0cbb07ea71</sys_id>
+        <sys_metadata>29c63137db17955024c443ea139619af</sys_metadata>
+        <sys_name>승인</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_ui_view_29c63137db17955024c443ea139619af</sys_update_name>
+        <sys_update_version display_value="sys_ui_view_29c63137db17955024c443ea139619af">21c67537db17955024c443ea1396192b</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

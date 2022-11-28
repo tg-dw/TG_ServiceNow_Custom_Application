@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="OA 장비">4cfa3d66872215104bba40c6cebb3541</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint>현재 로그인한 사용자의 대기중인 OA장비 신청서 리스트</hint>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>My OA L</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_tigar_office_a_0_office_automation</name>
+        <order>400</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>&amp;sysparm_fixed_query=active=true^requested_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=1</query>
+        <report/>
+        <roles>x_tigar_office_a_0.oa_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-14 05:00:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce2825d31b435d10cc9efdd2cd4bcb08</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>대기</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_app_module_ce2825d31b435d10cc9efdd2cd4bcb08</sys_update_name>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 05:17:56</sys_updated_on>
+        <timeline_page/>
+        <title>대기</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_app_module_ce2825d31b435d10cc9efdd2cd4bcb08</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="OA 장비">4cfa3d66872215104bba40c6cebb3541</application><assessment/><device_type/><filter/><hint>현재 로그인한 사용자의 대기중인 OA장비 신청서 리스트</hint><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>My OA L</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_tigar_office_a_0_office_automation</name><order>400</order><override_menu_roles>false</override_menu_roles><query>&amp;sysparm_fixed_query=active=true^requested_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=1</query><report/><roles>x_tigar_office_a_0.oa_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-11-14 05:00:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ce2825d31b435d10cc9efdd2cd4bcb08</sys_id><sys_mod_count>14</sys_mod_count><sys_name>대기</sys_name><sys_overrides/><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sys_app_module_ce2825d31b435d10cc9efdd2cd4bcb08</sys_update_name><sys_updated_by>leehohyeong</sys_updated_by><sys_updated_on>2022-11-28 05:17:56</sys_updated_on><timeline_page/><title>대기</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1392870637</payload_hash>
+        <record_name>대기</record_name>
+        <reverted_from/>
+        <source>c59452f7dbd7955024c443ea139619ae</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 05:17:56</sys_created_on>
+        <sys_id>3ff23d7fdbd3955024c443ea13961949</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_recorded_at>184bcaba45a0000001</sys_recorded_at>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 07:44:40</sys_updated_on>
+        <type>Module</type>
+        <update_guid>b3f23d7f52d39550d364b23ea6115f49</update_guid>
+        <update_guid_history>b3f23d7f52d39550d364b23ea6115f49:-1392870637,38b13dfb5bd39550ff84ec23dedd1722:640611002,fcffed3b54d3955002536fcb8fe3208d:-1640375111,6d5e65b752d395505b361686d959c161:373606072,684ea1b7dbd39550cb8be6182d46953b:-1640375111,099be573b8d39550b254d2c9cf9b681a:223038891,c434a577ae939550d2019265a9db2b93:1019734806,da0f09f3711395508624f075692d8a2d:1423519208,196e09b3aa1395507ef123fc53e4dbbd:-1728372074,b55d09330b1395509813f7fc279ed376:703954484,e0bcc5ff06df555035aad51cc17b0fa6:-1728372074,163c0dbf19df555065aec509ad80dcb3:1390228900,a78cb0771d9f55505761d76ce4d7140d:-224119778,9a2af073129f5550763c3f0861d22b06:1725014269,e2558368a29f511035082d5ada120442:0,ed4347e0159f5110b96d13a70f75e38e:1035818119,d3b2ad686e175110f415ca7c28a25a82:-1849464922</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="대기">45eefd73db57955024c443ea13961900</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 06:09:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>5f5eb8ef97f04230af5a89791b11a100</sys_id>
+        <sys_metadata>ce2825d31b435d10cc9efdd2cd4bcb08</sys_metadata>
+        <sys_name>대기</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_app_module_ce2825d31b435d10cc9efdd2cd4bcb08</sys_update_name>
+        <sys_update_version display_value="sys_app_module_ce2825d31b435d10cc9efdd2cd4bcb08">3ff23d7fdbd3955024c443ea13961949</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

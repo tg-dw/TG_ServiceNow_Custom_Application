@@ -65,7 +65,7 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template display_value="AES Record Producer">211f71ca73202010ae42d31ee2f6a785</sc_template>
-        <script><![CDATA[if((producer.request_type == 'new' || producer.request_type == 'rent') && producer.currency > 2000000){
+        <script><![CDATA[if((producer.request_type == 'new' || producer.request_type == 'rent') && producer.currency > 1500){
 	current.state = 2; // 승인대기중
 }else{
 	current.state = 3; // 승인됨

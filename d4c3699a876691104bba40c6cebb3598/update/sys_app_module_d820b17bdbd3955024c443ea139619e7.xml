@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Office Automations">4cfa3d66872215104bba40c6cebb3541</application>
+        <application display_value="OA 장비">4cfa3d66872215104bba40c6cebb3541</application>
         <assessment/>
         <device_type/>
         <filter/>
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>SEPARATOR</link_type>
         <map_page/>
-        <mobile_title>OA Approval Requests</mobile_title>
+        <mobile_title>OA User</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_tigar_office_a_0_oa_approval_request</name>
-        <order>400</order>
+        <name/>
+        <order>1000</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_tigar_office_a_0.oa_approval_request_user</roles>
+        <roles>x_tigar_office_a_0.oa_approver</roles>
         <sys_class_name>sys_app_module</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-21 02:15:25</sys_created_on>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 05:05:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0616852ddb97d51024c443ea13961923</sys_id>
-        <sys_name>OA 전자결재 리스트</sys_name>
+        <sys_id>d820b17bdbd3955024c443ea139619e7</sys_id>
+        <sys_name>승인자 메뉴</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
         <sys_policy/>
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
-        <sys_update_name>sys_app_module_0616852ddb97d51024c443ea13961923</sys_update_name>
+        <sys_update_name>sys_app_module_d820b17bdbd3955024c443ea139619e7</sys_update_name>
         <timeline_page/>
-        <title>OA 전자결재 리스트</title>
+        <title>승인자 메뉴</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

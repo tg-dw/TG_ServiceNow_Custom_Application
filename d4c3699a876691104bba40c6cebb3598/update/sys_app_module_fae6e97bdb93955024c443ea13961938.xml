@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="OA 장비">4cfa3d66872215104bba40c6cebb3541</application>
+        <application display_value="OA 전자결재">651aadbfdb93955024c443ea139619da</application>
         <assessment/>
         <device_type/>
         <filter/>
-        <hint>OA 시스템 속성 모듈</hint>
+        <hint/>
         <homepage/>
         <image/>
-        <link_type>DIRECT</link_type>
+        <link_type>SEPARATOR</link_type>
         <map_page/>
-        <mobile_title>OA System Properties</mobile_title>
+        <mobile_title>전자결재 </mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name/>
-        <order>2200</order>
+        <name>x_tigar_office_a_0_oa_approval_request</name>
+        <order>100</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>system_properties_ui.do?sysparm_title=Office Automation System Properties&amp;sysparm_category=OA System Properties</query>
+        <query/>
         <report/>
-        <roles>x_tigar_office_a_0.oa_admin</roles>
+        <roles>x_tigar_office_a_0.oaar_user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-10-26 07:56:18</sys_created_on>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 04:25:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>8a3a1c9187bed1504bba40c6cebb35d1</sys_id>
-        <sys_name>시스템 속성</sys_name>
+        <sys_id>fae6e97bdb93955024c443ea13961938</sys_id>
+        <sys_name>작성자 메뉴</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
         <sys_policy/>
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
-        <sys_update_name>sys_app_module_8a3a1c9187bed1504bba40c6cebb35d1</sys_update_name>
+        <sys_update_name>sys_app_module_fae6e97bdb93955024c443ea13961938</sys_update_name>
         <timeline_page/>
-        <title>시스템 속성</title>
+        <title>작성자 메뉴</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

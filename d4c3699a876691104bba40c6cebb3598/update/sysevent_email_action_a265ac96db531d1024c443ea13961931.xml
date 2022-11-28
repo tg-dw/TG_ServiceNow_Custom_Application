@@ -36,19 +36,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Dear ${requestor},</p>
-<p>&nbsp;</p>
-<p>${document_type} ${short_description} ${state}</p>
-<p>&nbsp;</p>
-<p>&nbsp; 신청서 : <a title="${number}" href="https://timegatecorpdemo2.service-now.com/nav_to.do?uri=x_tigar_office_a_0_office_automation.do?sys_id=f5893a418776d1504bba40c6cebb3575" target="_blank" rel="noopener">${number}</a></p>
-<p>&nbsp; 상태 : ${state}</p>
-<p>&nbsp; 유형 : ${document_type}</p>
-<p>&nbsp; 제목 : ${short_description}</p>
-<p>&nbsp; 내용 : ${description}</p>
-<p>&nbsp;</p>
-<p>&nbsp;- 의견 : ${comments_and_work_notes}</p>
-<p>&nbsp;</p>
-<p>&nbsp; - 참조자 : 경영지원팀 이름 직급</p>
+        <message_html><![CDATA[<p>&nbsp; - 참조자 : 경영지원팀 이름 직급</p>
 <p>&nbsp; - 전화번호 :</p>
 <p>&nbsp; - 이메일 :&nbsp;&nbsp;</p>]]></message_html>
         <message_list/>
@@ -64,7 +52,7 @@
         <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject>서비스나우 전자결재 : ${company} ${requestor} -  ${document_type} ${short_description} ${state}</subject>
+        <subject>서비스나우 전자결재 :</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>leehohyeong</sys_created_by>

@@ -6,7 +6,7 @@
         <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>false</create_access>
+        <create_access>true</create_access>
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
         <is_extendable>false</is_extendable>
@@ -27,8 +27,8 @@
         <sys_policy/>
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
         <sys_update_name>sys_db_object_936409e5db97d51024c443ea1396198d</sys_update_name>
-        <update_access>false</update_access>
-        <user_role display_value="x_tigar_office_a_0.oa_approval_request_user" name="x_tigar_office_a_0.oa_approval_request_user">b116852ddb97d51024c443ea13961919</user_role>
+        <update_access>true</update_access>
+        <user_role display_value="x_tigar_office_a_0.oaar_user" name="x_tigar_office_a_0.oaar_user">b116852ddb97d51024c443ea13961919</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>
