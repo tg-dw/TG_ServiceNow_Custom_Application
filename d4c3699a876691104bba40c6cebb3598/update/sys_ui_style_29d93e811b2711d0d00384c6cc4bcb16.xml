@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>line_team_leader</element>
+        <name>x_tigar_office_a_0_oa_approval_request</name>
+        <style>background-color: red;&#13;
+color: white;&#13;
+font-weight: bold;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-12-02 07:39:50</sys_created_on>
+        <sys_id>29d93e811b2711d0d00384c6cc4bcb16</sys_id>
+        <sys_name>x_tigar_office_a_0_oa_approval_request</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_ui_style_29d93e811b2711d0d00384c6cc4bcb16</sys_update_name>
+        <value>반려</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=29d93e811b2711d0d00384c6cc4bcb16"/>
+</record_update>
