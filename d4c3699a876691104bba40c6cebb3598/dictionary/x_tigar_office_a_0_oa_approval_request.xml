@@ -33,6 +33,7 @@
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="결재 일시" max_length="40" name="line_director_dt" read_only="true" type="glide_date_time"/>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_president" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
@@ -40,6 +41,7 @@
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="결재 일시" max_length="40" name="line_president_dt" read_only="true" type="glide_date_time"/>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_pro" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
@@ -47,6 +49,7 @@
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="결재 일시" max_length="40" name="line_pro_dt" read_only="true" type="glide_date_time"/>
         <element choice="3" default="대기" label="결재 상태" max_length="65536" name="line_team_leader" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="대기" sequence="0" value="대기"/>
@@ -54,6 +57,7 @@
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="결재 일시" max_length="40" name="line_team_leader_dt" read_only="true" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="사업본부장/상무이사" max_length="32" name="line_user_director" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="사장" max_length="32" name="line_user_president" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="프로" max_length="32" name="line_user_pro" read_only="true" reference="sys_user" type="reference"/>
@@ -67,6 +71,7 @@
                 <element inactive_on_update="false" label="반려" sequence="2" value="반려"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="결재 일시" max_length="40" name="line_vice_president_dt" read_only="true" type="glide_date_time"/>
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="기안자" max_length="32" name="requestor" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element attributes="omit_sys_original=true" label="비용" max_length="20" name="request_cost" type="currency"/>
         <element attributes="edge_encryption_enabled=true" label="기안 일시" max_length="40" name="request_date_time" type="glide_date_time"/>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_tigar_office_a_0_oa_approval_request</collection>
+        <condition table="x_tigar_office_a_0_oa_approval_request">state=-4^EQ<item display_value="반려됨" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_tigar_office_a_0.oaar_when_record_reje</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<table style="border-collapse: collapse; width: 100%; height: 223.859px;" border="1">
+<tbody>
+<tr style="height: 22.3906px;">
+<td style="width: 100%; height: 22.3906px; text-align: center; background-color: #ecf0f1;" colspan="3">결재상태표</td>
+</tr>
+<tr style="height: 22.3906px;">
+<td style="width: 33.3799%; height: 22.3906px; text-align: center; background-color: #ecf0f1;">&nbsp;</td>
+<td style="width: 33.3799%; height: 22.3906px; text-align: center; background-color: #ecf0f1;">승인자</td>
+<td style="width: 33.2402%; height: 22.3906px; text-align: center; background-color: #ecf0f1;">결재 상태</td>
+</tr>
+<tr style="height: 22.3906px;">
+<td style="width: 33.3799%; height: 22.3906px; text-align: center; background-color: #ecf0f1;">프로</td>
+<td style="width: 33.3799%; height: 22.3906px; text-align: center;">${line_user_pro}</td>
+<td style="width: 33.2402%; height: 22.3906px; text-align: center;">${line_pro}</td>
+</tr>
+<tr style="height: 44.7656px;">
+<td style="width: 33.3799%; height: 44.7656px; text-align: center; background-color: #ecf0f1;">팀장/이사</td>
+<td style="width: 33.3799%; height: 44.7656px; text-align: center;">${line_user_team_leader}</td>
+<td style="width: 33.2402%; height: 44.7656px; text-align: center;">${line_team_leader}</td>
+</tr>
+<tr style="height: 44.7656px;">
+<td style="width: 33.3799%; height: 44.7656px; text-align: center; background-color: #ecf0f1;">사업본부장/상무이사</td>
+<td style="width: 33.3799%; height: 44.7656px; text-align: center;">${line_user_director}</td>
+<td style="width: 33.2402%; height: 44.7656px; text-align: center;">${line_director}</td>
+</tr>
+<tr style="height: 44.7656px;">
+<td style="width: 33.3799%; height: 44.7656px; text-align: center; background-color: #ecf0f1;">사업본부장/부사장</td>
+<td style="width: 33.3799%; height: 44.7656px; text-align: center;">${line_user_vice_president}</td>
+<td style="width: 33.2402%; height: 44.7656px; text-align: center;">${line_vice_president}</td>
+</tr>
+<tr style="height: 22.3906px;">
+<td style="width: 33.3799%; height: 22.3906px; text-align: center; background-color: #ecf0f1;">사장</td>
+<td style="width: 33.3799%; height: 22.3906px; text-align: center;">${line_user_president}</td>
+<td style="width: 33.2402%; height: 22.3906px; text-align: center;">${line_president}</td>
+</tr>
+</tbody>
+</table>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>OAAR Rejected Outbound Email</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>requestor</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>ServiceNow OA 전자결재: ${short_description} - ${state}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-12-02 04:52:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0642d2851b2311d0d00384c6cc4bcbf9</sys_id>
+        <sys_name>OAAR Rejected Outbound Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sysevent_email_action_0642d2851b2311d0d00384c6cc4bcbf9</sys_update_name>
+        <sys_version>2</sys_version>
+        <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

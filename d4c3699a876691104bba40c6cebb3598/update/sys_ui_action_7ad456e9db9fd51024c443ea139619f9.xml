@@ -37,6 +37,7 @@
 //    조건4. 현재 본부장 결재 상태가 대기
 //    액션. 본부장 승인 처리 > 업데이트 > 현재 Form으로 이동
 current.line_director = "승인";
+current.line_director_dt = new GlideDateTime();
 current.update();
 action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>

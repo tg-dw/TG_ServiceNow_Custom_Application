@@ -38,6 +38,7 @@
 //    액션. 사장 반려 처리 > 업데이트 > 현재 Form으로 이동
 
 current.line_president = "반려";
+current.line_president_dt = new GlideDateTime();
 current.state = -4;
 current.update();
 action.setRedirectURL(current);]]></script>

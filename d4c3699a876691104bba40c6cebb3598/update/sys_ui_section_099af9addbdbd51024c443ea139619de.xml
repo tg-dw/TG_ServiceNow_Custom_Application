@@ -3,154 +3,238 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_user_pro</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>283653b11bd35d50d00384c6cc4bcb9c</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>66b96e491ba311d0d00384c6cc4bcbe6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_user_team_leader</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>203653b11bd35d50d00384c6cc4bcb9d</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6eb96e491ba311d0d00384c6cc4bcbe6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_user_director</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>243653b11bd35d50d00384c6cc4bcb9d</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>62b96e491ba311d0d00384c6cc4bcbe7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_user_vice_president</element>
             <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>283653b11bd35d50d00384c6cc4bcb9d</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>66b96e491ba311d0d00384c6cc4bcbe7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_user_president</element>
             <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>2c3653b11bd35d50d00384c6cc4bcb9d</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6ab96e491ba311d0d00384c6cc4bcbe7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>203653b11bd35d50d00384c6cc4bcb9e</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6eb96e491ba311d0d00384c6cc4bcbe7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_pro</element>
             <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>243653b11bd35d50d00384c6cc4bcb9e</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>62b96e491ba311d0d00384c6cc4bcbe8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_team_leader</element>
             <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>283653b11bd35d50d00384c6cc4bcb9e</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>66b96e491ba311d0d00384c6cc4bcbe8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_director</element>
             <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>2c3653b11bd35d50d00384c6cc4bcb9e</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6ab96e491ba311d0d00384c6cc4bcbe8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_vice_president</element>
             <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>203653b11bd35d50d00384c6cc4bcb9f</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6eb96e491ba311d0d00384c6cc4bcbe8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>line_president</element>
             <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 07:23:29</sys_created_on>
-            <sys_id>243653b11bd35d50d00384c6cc4bcb9f</sys_id>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>62b96e491ba311d0d00384c6cc4bcbe9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 07:23:29</sys_updated_on>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>66b96e491ba311d0d00384c6cc4bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>line_pro_dt</element>
+            <position>12</position>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6ab96e491ba311d0d00384c6cc4bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>line_team_leader_dt</element>
+            <position>13</position>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6eb96e491ba311d0d00384c6cc4bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>line_director_dt</element>
+            <position>14</position>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>62b96e491ba311d0d00384c6cc4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>line_vice_president_dt</element>
+            <position>15</position>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>66b96e491ba311d0d00384c6cc4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>line_president_dt</element>
+            <position>16</position>
+            <sys_created_by>leehohyeong</sys_created_by>
+            <sys_created_on>2022-12-02 06:29:27</sys_created_on>
+            <sys_id>6ab96e491ba311d0d00384c6cc4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="결재선" display_value="결재선" name="x_tigar_office_a_0_oa_approval_request" sys_domain="global" view="Default view">099af9addbdbd51024c443ea139619de</sys_ui_section>
+            <sys_updated_by>leehohyeong</sys_updated_by>
+            <sys_updated_on>2022-12-02 06:29:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

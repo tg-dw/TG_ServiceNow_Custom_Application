@@ -36,6 +36,7 @@
 //    조건 4. 현재 팀장 결재 상태가 대기
 //    액션. 팀장 반려 처리 > 업데이트 > 현재 Form으로 이동
 current.line_team_leader = "반려";
+current.line_team_leader_dt = new GlideDateTime();
 current.state = -4;
 current.update();
 action.setRedirectURL(current);]]></script>
