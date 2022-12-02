@@ -5,7 +5,7 @@
         <assessment/>
         <device_type/>
         <filter/>
-        <hint>사장 승인</hint>
+        <hint>나에게 할당된 OA 전자결재 문서</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
@@ -15,9 +15,12 @@
         <name>x_tigar_office_a_0_oa_approval_request</name>
         <order>1400</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>&amp;sysparm_fixed_query=state=2^line_vice_president=승인^line_president=대기^req_department.company.u_presidentDYNAMIC90d1921e5f510100a9ad2572f2b477fe</query>
+        <query>&amp;sysparm_fixed_query=state=2^line_pro=승인^line_team_leader=대기^req_department.dept_headDYNAMIC90d1921e5f510100a9ad2572f2b477fe&#13;
+^NQstate=2^line_team_leader=승인^line_director=대기^req_department.parent.dept_headDYNAMIC90d1921e5f510100a9ad2572f2b477fe&#13;
+^NQstate=2^line_director=승인^line_vice_president=대기^line_user_vice_presidentDYNAMIC90d1921e5f510100a9ad2572f2b477fe&#13;
+^NQstate=2^line_vice_president=승인^line_president=대기^line_user_presidentDYNAMIC90d1921e5f510100a9ad2572f2b477fe</query>
         <report/>
-        <roles>x_tigar_office_a_0.oaar_approver_president</roles>
+        <roles>x_tigar_office_a_0.oaar_approver_team_leader,x_tigar_office_a_0.oaar_approver_director,x_tigar_office_a_0.oaar_approver_vice_president,x_tigar_office_a_0.oaar_approver_president</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>leehohyeong</sys_created_by>
         <sys_created_on>2022-11-28 07:24:27</sys_created_on>

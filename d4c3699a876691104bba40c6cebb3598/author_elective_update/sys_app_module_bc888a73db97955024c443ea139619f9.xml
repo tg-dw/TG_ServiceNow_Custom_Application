@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="OA 전자결재">651aadbfdb93955024c443ea139619da</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint>팀장 승인</hint>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>할당된 문서</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_tigar_office_a_0_oa_approval_request</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>&amp;sysparm_fixed_query=state=2^line_pro=승인^line_team_leader=대기^req_department.dept_headDYNAMIC90d1921e5f510100a9ad2572f2b477fe</query>
+        <report/>
+        <roles>x_tigar_office_a_0.oaar_approver_team_leader</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 06:53:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc888a73db97955024c443ea139619f9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>할당된 문서</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_update_name>sys_app_module_bc888a73db97955024c443ea139619f9</sys_update_name>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 07:55:51</sys_updated_on>
+        <timeline_page/>
+        <title>할당된 문서</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</application>
+        <file_path/>
+        <instance_id>328edb6bdb596c1852dd2f17d4961975</instance_id>
+        <instance_name>timegatecorpdemo3</instance_name>
+        <name>sys_app_module_bc888a73db97955024c443ea139619f9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="OA 전자결재">651aadbfdb93955024c443ea139619da</application><assessment/><device_type/><filter/><hint>팀장 승인</hint><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>할당된 문서</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_tigar_office_a_0_oa_approval_request</name><order>1100</order><override_menu_roles>false</override_menu_roles><query>&amp;sysparm_fixed_query=state=2^line_pro=승인^line_team_leader=대기^req_department.dept_headDYNAMIC90d1921e5f510100a9ad2572f2b477fe</query><report/><roles>x_tigar_office_a_0.oaar_approver_team_leader</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>leehohyeong</sys_created_by><sys_created_on>2022-11-28 06:53:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bc888a73db97955024c443ea139619f9</sys_id><sys_mod_count>5</sys_mod_count><sys_name>할당된 문서</sys_name><sys_overrides/><sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package><sys_policy/><sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope><sys_update_name>sys_app_module_bc888a73db97955024c443ea139619f9</sys_update_name><sys_updated_by>leehohyeong</sys_updated_by><sys_updated_on>2022-11-28 07:55:51</sys_updated_on><timeline_page/><title>할당된 문서</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1156197107</payload_hash>
+        <record_name>할당된 문서</record_name>
+        <reverted_from/>
+        <source>d3e3da77dbd7955024c443ea1396195e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-11-28 07:55:51</sys_created_on>
+        <sys_id>45279afbdbd7955024c443ea1396193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184bd3c3aff0000001</sys_recorded_at>
+        <sys_updated_by>leehohyeong</sys_updated_by>
+        <sys_updated_on>2022-11-28 07:55:51</sys_updated_on>
+        <type>Module</type>
+        <update_guid>4d279afb7fd795503d76c94de2602a3d</update_guid>
+        <update_guid_history>4d279afb7fd795503d76c94de2602a3d:1156197107,11fb02f779979550069c6656460216ce:1104822161,338b0eb78c9795502c8a881dc164405d:1498681425,621b02b734979550f998f1cc2d00127a:-893584787,9bfa0a771e979550d0a1beaff15dfe21:-1542997565,5be8cab361979550df5b99b9be959ea3:1602298631</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="할당된 문서">a9f5fdc91b6fdd90d00384c6cc4bcb2a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leehohyeong</sys_created_by>
+        <sys_created_on>2022-12-02 02:43:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0453000b02e14df38032d23b26ee2b11</sys_id>
+        <sys_metadata>bc888a73db97955024c443ea139619f9</sys_metadata>
+        <sys_name>할당된 문서</sys_name>
+        <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
+        <sys_scope_delete display_value="">0cc872c3bebc454290bea1b0ad246ba1</sys_scope_delete>
+        <sys_update_name>sys_app_module_bc888a73db97955024c443ea139619f9</sys_update_name>
+        <sys_update_version display_value="sys_app_module_bc888a73db97955024c443ea139619f9">45279afbdbd7955024c443ea1396193e</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

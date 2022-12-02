@@ -5,33 +5,33 @@
         <assessment/>
         <device_type/>
         <filter/>
-        <hint>본부장 승인</hint>
+        <hint>승인자가 승인 결재한 전자결재 문서</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>할당된 문서</mobile_title>
+        <mobile_title>승인한 문서</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_tigar_office_a_0_oa_approval_request</name>
-        <order>1200</order>
+        <order>1500</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>&amp;sysparm_fixed_query=state=2^line_team_leader=승인^line_director=대기^req_department.parent.dept_headDYNAMIC90d1921e5f510100a9ad2572f2b477fe</query>
+        <query>&amp;sysparm_fixed_query=line_user_team_leaderDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_team_leader=승인^NQline_user_directorDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_director=승인^NQline_user_vice_presidentDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_vice_president=승인^NQline_user_presidentDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_president=승인</query>
         <report/>
-        <roles>x_tigar_office_a_0.oaar_approver_director</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>leehohyeong</sys_created_by>
-        <sys_created_on>2022-11-28 07:01:21</sys_created_on>
+        <sys_created_on>2022-11-28 08:53:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0c8a8a37db97955024c443ea13961921</sys_id>
-        <sys_name>할당된 문서</sys_name>
+        <sys_id>c6e26a73db5b955024c443ea139619d9</sys_id>
+        <sys_name>승인한 문서</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Automation" source="x_tigar_office_a_0">d4c3699a876691104bba40c6cebb3598</sys_package>
         <sys_policy/>
         <sys_scope display_value="Office Automation">d4c3699a876691104bba40c6cebb3598</sys_scope>
-        <sys_update_name>sys_app_module_0c8a8a37db97955024c443ea13961921</sys_update_name>
+        <sys_update_name>sys_app_module_c6e26a73db5b955024c443ea139619d9</sys_update_name>
         <timeline_page/>
-        <title>할당된 문서</title>
+        <title>승인한 문서</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
