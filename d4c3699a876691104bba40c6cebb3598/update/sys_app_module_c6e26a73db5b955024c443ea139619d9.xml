@@ -17,7 +17,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query>&amp;sysparm_fixed_query=line_user_team_leaderDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_team_leader=승인^NQline_user_directorDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_director=승인^NQline_user_vice_presidentDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_vice_president=승인^NQline_user_presidentDYNAMIC90d1921e5f510100a9ad2572f2b477fe^line_president=승인</query>
         <report/>
-        <roles/>
+        <roles>x_tigar_office_a_0.oaar_approver_director,x_tigar_office_a_0.oaar_approver_president,x_tigar_office_a_0.oaar_approver_team_leader,x_tigar_office_a_0.oaar_approver_vice_president</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>leehohyeong</sys_created_by>
         <sys_created_on>2022-11-28 08:53:17</sys_created_on>

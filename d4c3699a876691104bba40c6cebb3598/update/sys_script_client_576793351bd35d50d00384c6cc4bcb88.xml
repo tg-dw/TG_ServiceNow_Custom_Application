@@ -18,18 +18,18 @@
 	g_form.setLabelOf('description','내용');
 	
 	var currentState = g_form.getValue('state');
-	if(currentState >= '2'){ // 진행 된 이후이면,
-		g_form.setReadOnly('number',true);g_form.setReadOnly('state',true);
-		g_form.setReadOnly('req_department',true);g_form.setReadOnly('requestor',true);
-		g_form.setReadOnly('document_type',true);
-		g_form.setReadOnly('in_service_life',true);g_form.setReadOnly('security_level',true);
-		g_form.setReadOnly('request_date_time',true);g_form.setReadOnly('complete_date_time',true);
+// 	if(currentState >= 2){ // 진행 된 이후이면,
+// 		g_form.setReadOnly('number',true);g_form.setReadOnly('state',true);
+// 		g_form.setReadOnly('req_department',true);g_form.setReadOnly('requestor',true);
+// 		g_form.setReadOnly('document_type',true);
+// 		g_form.setReadOnly('in_service_life',true);g_form.setReadOnly('security_level',true);
+// 		g_form.setReadOnly('request_date_time',true);g_form.setReadOnly('complete_date_time',true);
 		
-		g_form.setReadOnly('request_list',true);g_form.setReadOnly('request_cost',true);
-		g_form.setReadOnly('request_place',true);
-		g_form.setReadOnly('short_description',true);
-		g_form.setReadOnly('description',true);
-	}
+// 		g_form.setReadOnly('request_list',true);g_form.setReadOnly('request_cost',true);
+// 		g_form.setReadOnly('request_place',true);
+// 		g_form.setReadOnly('short_description',true);
+// 		g_form.setReadOnly('description',true);
+// 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>

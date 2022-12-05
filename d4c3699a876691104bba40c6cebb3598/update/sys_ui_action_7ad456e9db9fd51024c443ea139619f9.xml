@@ -18,11 +18,11 @@
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
         <isolate_script>false</isolate_script>
-        <list_action>false</list_action>
-        <list_banner_button>false</list_banner_button>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
         <list_button>false</list_button>
-        <list_choice>false</list_choice>
-        <list_context_menu>false</list_context_menu>
+        <list_choice>true</list_choice>
+        <list_context_menu>true</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
@@ -39,7 +39,7 @@
 current.line_director = "승인";
 current.line_director_dt = new GlideDateTime();
 current.update();
-action.setRedirectURL(current);]]></script>
+//action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
